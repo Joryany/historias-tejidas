@@ -1,22 +1,19 @@
 :root {
-
     /* Colores */
     --blanco: #FFFFFF;
     --rosa-fondo: #FFF3F0;
     --rosa-crema: #FAF0EB;
     --rosa-palido: #F6D6CD;
     --rosa-suave: #F4A29E;
-    --rosa-medio: #E8827C;
+    --rosa-medio: #e87ca0;
     --rosa-coral: #D96B64;
     --rosa-principal: #C74B59;
-    --rosa-fuerte: #B13A48;
-    --frambuesa: #8F2D3B;
+    --rosa-fuerte: #b13a62;
+    --frambuesa: #bd4b89;
     --vino-rosa: #6B202A;
     --rosa-oscuro: #4A141C;
 
-
     /* Gradiante */
-
     --gradiente: linear-gradient(180deg,
             var(--rosa-crema) 0%,
             var(--rosa-suave) 40%,
@@ -29,12 +26,10 @@
             rgba(107, 32, 42, 0.25) 100%);
 
     /* Border-radius */
-
-    --border-rdp: 30px;
-    --border-rdpl: 999px;
+    --border-rdp: 1.875rem; /* 30px */
+    --border-rdpl: 62.4375rem; /* 999px */
 
     /* font-weidth */
-
     --negrita: 600;
     --normal: 400;
     --fina: 200;
@@ -44,43 +39,36 @@
     --transicion-lenta: .5s ease;
 
     /* Sombra */
+    --sombra-suave: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.4); /* 0 3px 12px */
+    --sombra-normal: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.5); /* 0 3px 15px */
+    --sombra-pequeña: 0 0.1875rem 0.3125rem rgba(133, 48, 104, 0.219); /* 0 3px 5px */
 
-    --sombra-suave: 0 3px 12px rgba(0, 0, 0, 0.4);
-    --sombra-normal: 0 3px 15px rgba(0, 0, 0, 0.5);
-    --sombra-pequeña: 0 3px 5px rgba(133, 48, 104, 0.219);
+    /* Padding */
+    --padding-05: 0.25rem 0.5rem; /* 4px 8px - Elementos muy compactos (tags, badges) */
+    --padding-1: 0.5rem 0.875rem; /* 8px 14px - Botones pequeños */
+    --padding-2: 0.75rem 1.125rem; /* 12px 18px - Tarjetas compactas o inputs */
+    --padding-3: 1rem 1.5rem; /* 16px 24px - Padding estándar */
+    --padding-4: 1.5rem 2rem; /* 24px 32px - Tarjetas grandes o contenedores */
+    --padding-5: 2rem 2.5rem; /* 32px 40px - Secciones o contenedores amplios */
+    --padding-6: 3rem 2.5rem; /* 48px 40px - Elementos muy espaciosos o héroes */
 
-    /*Padding*/
-
-    --padding-05: 4px 8px;
-    /* Elementos muy compactos (tags, badges) */
-    --padding-1: 8px 14px;
-    /* Botones pequeños */
-    --padding-2: 12px 18px;
-    /* Tarjetas compactas o inputs */
-    --padding-3: 16px 24px;
-    /* Padding estándar */
-    --padding-4: 24px 32px;
-    /* Tarjetas grandes o contenedores */
-    --padding-5: 32px 40px;
-    /* Secciones o contenedores amplios */
-    --padding-6: 48px 40px;
-    /* Elementos muy espaciosos o héroes */
-
-    /* Márgenes*/
+    /* Márgenes */
     --margin-bt: 0.8rem;
     --margin-bt0: 1rem;
-    --margin-1: 10px;
-    /* Espacios muy cortos */
-    --margin-2: 15px 10px;
-    /* Para elementos que necesitan aire lateral y vertical */
-    --margin-3: 20px;
-    /* Margen estándar entre elementos */
-    --margin-4: 30px 20px;
-    /* Para separar secciones o contenedores grandes */
-    --margin-5: 0 0 50px auto;
-    /* Márgenes grandes verticales y centrado automático horizontal*/
-}
+    --margin-1: 0.625rem; /* 10px - Espacios muy cortos */
+    --margin-2: 0.9375rem 0.625rem; /* 15px 10px - Aire lateral y vertical */
+    --margin-3: 1.25rem; /* 20px - Margen estándar entre elementos */
+    --margin-4: 1.875rem 1.25rem; /* 30px 20px - Separar secciones o contenedores grandes */
+    --margin-5: 0 0 3.125rem auto; /* 0 0 50px auto - Márgenes grandes verticales y centrado */
 
+    /* Gap */
+    --gap-ssm: 0.625rem;
+    --gap-sm: 0.9375rem; /* 15px*/
+    --gap-md: 1rem;      /* 16px*/
+    --gap-mmd: 1.25rem;
+    --gap-lg: 1.875rem;  /* 30px*/
+
+}
 /* Body */
 
 html {
@@ -101,18 +89,6 @@ body {
     overflow-x: hidden;
     font-family: 'Times New Roman', Times, serif;
     color: var(--rosa-crema);
-}
-
-
-html {
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
 }
 
 
@@ -206,7 +182,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: var(--gap-lg);
     flex-wrap: wrap;
 
 
@@ -231,7 +207,9 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: var(--gap-sm);
+
+    margin-right: 10px;
 }
 
 nav a {
@@ -254,11 +232,59 @@ nav a {
 }
 
 nav a:hover {
-    background: var(--rosa-principal);
+    background: var(--frambuesa);
     color: var(--rosa-crema);
     text-decoration: underline;
     transform: translateY(-2px);
 }
+
+ 
+nav #nav__a--carrito {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+nav #nav__a--carrito:hover {
+    background: transparent;
+    border: none;
+    text-decoration: none;
+} 
+
+nav a #carrito {
+    width: 40px;
+    height: auto;
+    transition: transform var(--transicion); 
+}
+
+
+nav a #carrito:hover {
+    transform: translateY(-3px);
+}
+
+
+#nav__a--activo {
+    background-color: var(--frambuesa);
+    color: var(--blanco);
+    border: 2px solid var(--frambuesa);
+
+}
+
+
+#nav__a--activo-carrito {
+   background: none;
+    border: none;
+    border-bottom: 1px solid var(--frambuesa);
+    border-radius: 0;
+    padding: 0;
+}
+
+nav #nav__a--activo-:hover {
+    background: transparent;
+    border: none;
+    text-decoration: none;
+}
+
 
 /* ----------------------------------------------------------------------------
 ======================================FOOTER======================================
@@ -277,7 +303,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
+    gap: var(--gap-sm);
     width: 100%;
     padding: 18px 20px;
     background-color: var(--rosa-suave);
@@ -290,14 +316,15 @@ nav a:hover {
     height: 62px;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: var(--sombra-suave);
 }
 
 .footer-container .footer-marca h2 {
     margin: 0;
-    color: var(--rosa-principal);
+    color: var(--blanco);
     font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--rosa-fuerte);
+    font-weight: var(--negrita);
+    text-shadow: var(--sombra-suave);
 }
 
 .footer-container .cont-columna {
@@ -306,14 +333,14 @@ nav a:hover {
     width: 100%;
     max-width: 1000px;
     padding: 38px 30px;
-    gap: 40px;
+    gap: var(--gap-lg);
 }
 
 .footer-container .cont-columna .footer-columna {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: var(--gap-ssm);
 
 }
 
@@ -333,7 +360,7 @@ nav a:hover {
 }
 
 .footer-container .footer-columna a:hover {
-    color: var(--rosa-principal);
+    color: var(--frambuesa);
     transform: translateX(4px);
 }
 
@@ -455,7 +482,7 @@ nav a:hover {
 .button-hero {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: var(--gap-md);
     margin: var(--margin-1);
     width: 100%;
     justify-content: center;
@@ -464,7 +491,7 @@ nav a:hover {
 .button-hero a {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: var(--gap-sm);
     padding: var(--padding-2);
     border-radius: var(--border-rdpl);
     font-weight: 600;
@@ -518,8 +545,12 @@ nav a:hover {
     border-radius: var(--border-rdp);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--margin-4);
+    gap: var(--gap-md);
     margin: var(--margin-3);
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -537,13 +568,13 @@ nav a:hover {
     align-items: center;
 
     height: 100%;
+    max-width: 300px;
 
 }
 
 .tarjeta img {
-    width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: var(--border-rdp);
     margin-bottom: 15px;
 }
@@ -593,6 +624,7 @@ nav a:hover {
     text-align: center;
 
     max-width: 220px;
+    max-height: 2rem;
 
 
 }
@@ -656,7 +688,7 @@ nav a:hover {
 .categorias-grid {
     padding: var(--padding-4);
     margin: var(--margin-3);
-    gap: var(--margin-4);
+    gap: var(--gap-lg);
 
     border-radius: var(--border-rdp);
 
@@ -729,7 +761,7 @@ nav a:hover {
 
 .pasos {
     display: flex;
-    gap: 20px;
+    gap: var(--gap-mmd);
     margin: var(--margin-2);
     flex-wrap: wrap;
     justify-content: center;
@@ -786,7 +818,7 @@ nav a:hover {
     text-align: center;
 
     margin: var(--margin-2);
-    gap: 15px;
+    gap: var(--gap-md);
     background-color: var(--rosa-fondo);
     padding: var(--padding-3);
 
@@ -931,7 +963,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 15px;
+    gap: var(--gap-md);
     background-color: var(--rosa-fondo);
     padding: var(--padding-3);
 
