@@ -105,3 +105,40 @@ MAIN
 FOOTER
 
 CHATBOT FLOTANTE
+
+CATÁLOGO
+│
+├── HEADER
+│
+├── HERO
+│   ├── "Nuestras creaciones"
+│   ├── "Encuentra algo que cuente tu historia"
+│   └── Descripción
+│
+├── EXPLORAR CATEGORÍAS
+│   ├── Animales
+│   ├── Personajes
+│   ├── Parejas
+│   ├── Regalos
+│   └── Personalizados
+│
+├── HERRAMIENTAS DE BÚSQUEDA
+│   ├── Buscar
+│   ├── Ordenar
+│   ├── Precio
+│   └── Disponibilidad
+│
+├── PRODUCTOS POR CATEGORIA
+│   ├── Producto 1
+│   ├── Producto 2
+│   ├── Producto 3
+│   ├── Producto 4
+│   ├── Producto 5
+│   └── ...
+│
+├── PERSONALIZADOS
+│   ├── "¿No encuentras lo que buscas?"
+│   ├── Texto
+│   └── Crear mi amigurumi
+│
+└── FOOTER
