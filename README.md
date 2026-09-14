@@ -142,3 +142,24 @@ CATÁLOGO
 │   └── Crear mi amigurumi
 │
 └── FOOTER
+
+
+Historias Tejidas/
+│
+├── index.html
+├── catalogo.html
+├── producto.html
+│
+├── css/
+│   ├── estilos.css
+│   ├── catalogo.css
+│   └── producto.css
+│
+├── js/
+│   ├── productos.js
+│   ├── catalogo.js
+│   └── producto.js
+│
+└── img/
+    ├── productos/
+    └── ...
