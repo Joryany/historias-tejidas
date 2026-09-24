@@ -5,7 +5,8 @@
 :root {
 
     /* Colores */
-    --blanco: #FFFFFF;
+    --blanco: #f8eded;
+    --crema:#fff8e6;
     --rosa-fondo: #FFF3F0;
     --rosa-crema: #FAF0EB;
     --rosa-palido: #F6D6CD;
@@ -16,7 +17,7 @@
     --rosa-fuerte: #B13A4A;
     --frambuesa: #BD4B77;
     --vino-rosa: #6B202A;
-    --rosa-oscuro: #4A141C;
+    --rosa-oscuro: #8f3f5f;
 
     /* Gradientes */
     --gradiente: linear-gradient(180deg, var(--rosa-crema) 0%, var(--rosa-suave) 40%, var(--rosa-medio) 80%, var(--rosa-fuerte) 100%);
@@ -388,7 +389,9 @@ nav #nav__a--activo-:hover {
     justify-content: center;
     align-items: center;
     min-height: 320px;
-    height: auto;
+    max-height: 350px;
+    max-width: 1200px;
+   
     padding: var(--espacio-lg) var(--espacio-md);
     border-radius: var(--radio);
     box-shadow: var(--sombra-media);
@@ -407,6 +410,9 @@ nav #nav__a--activo-:hover {
     z-index: 0;
     width: 100%;
     height: 100%;
+
+    
+    
 }
 
 .hero-overlay {
@@ -949,10 +955,14 @@ nav #nav__a--activo-:hover {
 =                   Producto                    =
 ==================================================*/
 #producto {
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    
+    flex-wrap: wrap;
+    flex-direction:row;
+
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
     gap: var(--espacio-md);
     padding: var(--espacio-sm);
 
@@ -960,16 +970,20 @@ nav #nav__a--activo-:hover {
 
 
 #producto img{
-    background: var(--blanco);
-    border: 2px solid var(--rosa-principal);
+    background: var(--gradiente);
+    border: 5px solid var(--rosa-crema);
     border-radius: var(--radio);
-    margin: var(--espacio-lg);
     width: 100%;
     height: auto;
-    box-shadow: var(--sombra-media);
+    box-shadow: var(--sombra-grande);
     object-fit: contain;
 
     transition: transform var(--transicion);
+
+    max-width: 500px;
+    height: auto;
+
+    flex: 1 1 300px; 
 }
 
 
@@ -979,37 +993,48 @@ nav #nav__a--activo-:hover {
 }
 
 #producto #producto__container {
-    margin: var(--espacio-lg);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    background: var(--crema);
+    max-width: 500px;
+    height: auto;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-media);
+    padding: var(--padding-seccion);
+    gap: 10px;
     
+    flex: 1 1 300px; 
 }
 
 #producto #etiqueta {
-   align-self: flex-end;
+   align-self: flex-start;
 
     margin: 0 0 var(--espacio-sm) 0;
 
     font-size: 0.85rem;
     max-width: 250px;
+
+    
 }
 
 
 #producto h1 {
     font-size: 2.5rem;
     color: var(--rosa-principal);
+    text-shadow: var(--sombra-pequeña);
 }
 
 #producto h2 {
     font-size: 2.2rem;
     margin-top: var(--espacio-sm);
+    text-shadow: var(--sombra-pequeña);
 }
 
 #producto h3, h4 {
     font-size: 1.5rem;
-    text-align: center;
     color: var(--rosa-principal);
 }
 
@@ -1019,4 +1044,141 @@ nav #nav__a--activo-:hover {
     flex-direction: column;
     justify-self: flex-end;
     align-items: flex-start;
+
+    gap: 20px;
+
+}
+
+.container__especificaciones--elemento {
+    background: var(--rosa-palido);
+     padding: var(--padding-tarjeta);
+      width: 100%;
+      height: auto;
+
+      border-radius: var(--radio);
+      box-shadow: var(--sombra-media);
+}
+
+@media (max-width: 768px) {
+    #producto img {
+        width: 320px;
+        height: 320px;
+        margin: var(--espacio-md);
+    }
+}
+
+
+/* ====== MODAL ====== */
+
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(74, 20, 28, 0.6);                               
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.activo { 
+    opacity: 1;
+    visibility: visible;                            
+}
+
+
+.modal-cerrar {
+    position: absolute;
+    top: var(--espacio-sm);
+    right: var(--espacio-sm);
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--rosa-principal);
+    cursor: pointer;
+}
+
+#personalizar {
+    margin-top: var(--espacio-sm);
+}
+
+.modal-cuadro {
+    transform: scale(0.9);    
+    transition: transform 0.3s ease;
+    position: relative;
+    background-color: var(--rosa-crema);
+    border-radius: var(--radio);
+    padding: var(--espacio-xl);
+    max-width: 500px;
+    width: 90%;
+    box-shadow: var(--sombra-grande);
+}
+
+.modal-overlay.activo .modal-cuadro {
+    transform: scale(1);         
+}
+
+/* ====== TAMAÑOS EN EL MODAL ====== */
+
+.opcion-tamano {
+    display: block;
+    padding: var(--espacio-sm);
+    margin: var(--espacio-xs) 0;
+    background-color: var(--rosa-fondo);
+    border-radius: var(--radio);
+    cursor: pointer;
+    transition: background-color var(--transicion);
+}
+
+.opcion-tamano:hover {
+    background-color: var(--rosa-palido);
+}
+
+#precio-modal {
+    text-align: center;
+    font-size: var(--texto-mediano);
+    color: var(--rosa-principal);
+    margin-top: var(--espacio-md);
+}
+
+
+.opcion-tamano {
+    display: block;
+    padding: var(--espacio-sm);
+    margin: var(--espacio-xs) 0;
+    background-color: var(--rosa-fondo);
+    border-radius: var(--radio);
+    cursor: pointer;
+    transition: background-color var(--transicion);
+
+    color: var(--rosa-oscuro); 
+}
+
+    /* ====== BOTONES DE CATEGORÍA ====== */
+
+.nav__catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--espacio-sm);
+    margin-bottom: var(--espacio-lg);
+}
+
+.boton-categoria {
+    background: var(--rosa-palido);
+    border: 2px solid var(--rosa-suave);
+    border-radius: var(--radio);
+    padding: var(--boton-y) var(--boton-x);
+    color: var(--rosa-principal);
+    font-weight: var(--negrita);
+    cursor: pointer;
+    transition: background-color var(--transicion), color var(--transicion);
+}
+
+.boton-categoria:hover {
+    background: var(--frambuesa);
+    color: var(--rosa-crema);
 }

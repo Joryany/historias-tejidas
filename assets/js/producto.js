@@ -2,7 +2,6 @@
     const idProducto = parametros.get("id");
     console.log("Id del Producto seleccionado:", idProducto);
 
-    console.log(productos);
 
     function buscarId(id) {
 
@@ -48,3 +47,44 @@ buscarId(idProducto)
         const etiqueta = document.querySelector("#etiqueta");
         etiqueta.textContent = productoEncontrado.etiqueta;
     }
+
+
+    // Modal
+        const botonPersonalizar = document.querySelector("#personalizar");
+        const modal = document.querySelector("#modal");
+        const botonCerrar = document.querySelector("#cerrar-modal");
+        const botonCerrar2 = document.querySelector("#cerrar-modal-2");
+
+        botonPersonalizar.addEventListener("click", function() {
+            modal.classList.add("activo");
+            actualizarPrecioModal();
+        });
+
+        botonCerrar.addEventListener("click", function() {
+            modal.classList.remove("activo");
+        });
+
+        botonCerrar2.addEventListener("click", function() {
+            modal.classList.remove("activo");
+        });
+
+
+        const formTamano = document.querySelector("#form-tamano");
+        const precioModal = document.querySelector("#precio-modal");
+
+        function actualizarPrecioModal() {
+            const radioSeleccionado = document.querySelector('input[name="tamano"]:checked');
+            const tamano = radioSeleccionado.value;
+
+           let multiplicador = 1; 
+            if (tamano === "pequeno") {
+                multiplicador = 0.60;
+            } else if (tamano === "grande") {
+                multiplicador = 2.10;
+            }
+            const precioCalculado = productoEncontrado.precio * multiplicador;
+            const precioFinal = Math.ceil(precioCalculado / 100) * 100;
+            precioModal.textContent = "Precio: $" + precioFinal.toLocaleString("es-CO") + " COP";
+        }
+
+        formTamano.addEventListener("change", actualizarPrecioModal);

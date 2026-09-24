@@ -28,19 +28,63 @@
             
             <img id="imagen" src="" alt="">
 
-            <div id="producto__container">
+            <div id="producto__container">  
+                <!-- Boton para regresar a ver todos los productos-->
                 <span id="etiqueta"> </span>
                 <h1 id="nombre"></h1>
                 <h2 id="precio"></h2>
 
+                <!-- Hacer Boton de comprar y botones de favorito.-->
                 <div id="producto__container--especificaciones">
-                    <h3 id="historia">La historia detrás del tejido</h3>
-                    <p id="historia__p"></p>
+                    
+                    <div class="container__especificaciones--elemento">
+                        <h3 id="historia">La historia detrás del tejido</h3>
+                        <p id="historia__p"></p>
+                    </div>
 
-                    <h4 id="materiales">Materiales del amigurumi</h4>
-                    <p id="materiales__p"></p>
+                    <div class="container__especificaciones--elemento">
+                        <h4 id="materiales">Materiales del amigurumi</h4>
+                        <p id="materiales__p"></p>
+                    </div>
                 </div>
+
+                <!-- Botón para abrir el modal -->
+                <button id="personalizar" class="button">Escoge</button>
+
+                
             </div>
+
+            <!-- Modal -->
+                <div id="modal" class="modal-overlay">
+                    <section class="modal-cuadro">
+                        <button id="cerrar-modal" class="modal-cerrar">✕</button>
+
+                        <h2>Personaliza tu amigurumi</h2>
+                        <h3>Elige el tamaño</h3>
+
+                        <div id="form-tamano">
+                            <label class="opcion-tamano">
+                                <input type="radio" name="tamano" value="pequeno" checked>
+                                Pequeño: 8cm
+                            </label>
+
+                            <label class="opcion-tamano">
+                                <input type="radio" name="tamano" value="mediano">
+                                Mediano: 20cm
+                            </label>
+
+                            <label class="opcion-tamano">
+                                <input type="radio" name="tamano" value="grande">
+                                Grande: 40cm
+                            </label>
+                        </div>
+
+                        <p id="precio-modal"><strong>Precio:</strong> </p>
+
+                        <button id="cerrar-modal-2" class="button">Cerrar</button>
+                    </section>
+                </div>
+            
 
         </section>
 
