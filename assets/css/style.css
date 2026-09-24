@@ -1059,11 +1059,153 @@ nav #nav__a--activo-:hover {
       box-shadow: var(--sombra-media);
 }
 
+/*  RESPONSIVE — PÁGINA DE PRODUCTO*/
+
+/* ===== TABLET ===== */
 @media (max-width: 768px) {
+
+    #producto {
+        flex-direction: column;
+        gap: var(--espacio-lg);
+        padding: var(--espacio-md);
+    }
+
     #producto img {
-        width: 320px;
-        height: 320px;
-        margin: var(--espacio-md);
+        width: 100%;
+        max-width: 500px;
+        flex: none;
+    }
+
+    #producto #producto__container {
+        width: 100%;
+        max-width: 500px;
+        flex: none;
+        padding: var(--espacio-lg);
+    }
+
+    #producto h1 {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    #producto h2 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    #producto h3,
+    #producto h4 {
+        font-size: 1.3rem;
+    }
+
+    #producto #producto__container
+    #producto__container--especificaciones {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .container__especificaciones--elemento {
+        width: 100%;
+    }
+}
+
+
+/* ===== CELULAR ===== */
+@media (max-width: 480px) {
+
+    #producto {
+        width: 100%;
+        flex-direction: column;
+        gap: var(--espacio-md);
+        padding: var(--espacio-sm);
+    }
+
+    /* ---------- IMAGEN ---------- */
+
+    #producto img {
+        width: 100%;
+        max-width: 100%;
+        border-width: 4px;
+        border-radius: var(--radio);
+    }
+
+
+    /* ---------- INFORMACIÓN ---------- */
+
+    #producto #producto__container {
+        width: 100%;
+        max-width: none;
+        padding: var(--espacio-md);
+        gap: 8px;
+    }
+
+    #producto #etiqueta {
+        max-width: 100%;
+        font-size: 0.8rem;
+        margin-bottom: var(--espacio-xs);
+    }
+
+    #producto h1 {
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    #producto h2 {
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    #producto h3,
+    #producto h4 {
+        font-size: 1.15rem;
+    }
+
+
+    /* ---------- ESPECIFICACIONES ---------- */
+
+    #producto #producto__container
+    #producto__container--especificaciones {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .container__especificaciones--elemento {
+        width: 100%;
+        padding: var(--espacio-sm);
+    }
+}
+
+
+/* ===== CELULARES PEQUEÑOS ===== */
+@media (max-width: 360px) {
+
+    #producto {
+        padding: 8px;
+    }
+
+    #producto #producto__container {
+        padding: var(--espacio-sm);
+    }
+
+    #producto h1 {
+        font-size: 1.55rem;
+    }
+
+    #producto h2 {
+        font-size: 1.4rem;
+    }
+
+    #producto h3,
+    #producto h4 {
+        font-size: 1.05rem;
+    }
+
+    .container__especificaciones--elemento {
+        padding: 10px;
     }
 }
 
@@ -1123,15 +1265,7 @@ nav #nav__a--activo-:hover {
 
 /* ====== TAMAÑOS EN EL MODAL ====== */
 
-.opcion-tamano {
-    display: block;
-    padding: var(--espacio-sm);
-    margin: var(--espacio-xs) 0;
-    background-color: var(--rosa-fondo);
-    border-radius: var(--radio);
-    cursor: pointer;
-    transition: background-color var(--transicion);
-}
+
 
 .opcion-tamano:hover {
     background-color: var(--rosa-palido);
@@ -1181,4 +1315,116 @@ nav #nav__a--activo-:hover {
 .boton-categoria:hover {
     background: var(--frambuesa);
     color: var(--rosa-crema);
+}
+
+/* RESPONSIVE — MODAL Y CATEGORÍAS*/
+
+/* ===== TABLET ===== */
+@media (max-width: 768px) {
+
+    /* ---------- MODAL ---------- */
+
+    .modal-cuadro {
+        width: 88%;
+        max-width: 450px;
+        padding: var(--espacio-lg);
+    }
+
+    .modal-cerrar {
+        top: var(--espacio-sm);
+        right: var(--espacio-sm);
+        font-size: 1.4rem;
+    }
+
+    #personalizar {
+        margin-top: var(--espacio-sm);
+    }
+
+    /* ---------- CATEGORÍAS ---------- */
+
+    .nav__catalogo {
+        gap: var(--espacio-xs);
+        margin-bottom: var(--espacio-md);
+    }
+
+    .boton-categoria {
+        padding: var(--boton-y) var(--boton-x);
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ===== CELULAR ===== */
+@media (max-width: 480px) {
+
+    /* ---------- MODAL ---------- */
+
+    .modal-cuadro {
+        width: calc(100% - 30px);
+        max-width: none;
+        padding: var(--espacio-md);
+        border-radius: var(--radio);
+    }
+
+    .modal-cerrar {
+        top: 10px;
+        right: 10px;
+        font-size: 1.3rem;
+    }
+
+    #personalizar {
+        margin-top: var(--espacio-md);
+    }
+
+    .opcion-tamano {
+        padding: 10px;
+        margin: 6px 0;
+        font-size: 0.95rem;
+    }
+
+    #precio-modal {
+        font-size: 1rem;
+        margin-top: var(--espacio-sm);
+    }
+
+
+    /* ---------- CATEGORÍAS ---------- */
+
+    .nav__catalogo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-bottom: var(--espacio-md);
+    }
+
+    .boton-categoria {
+        width: 100%;
+        padding: 10px 8px;
+        font-size: 0.9rem;
+        border-width: 2px;
+    }
+}
+
+
+/* ===== CELULARES MUY PEQUEÑOS ===== */
+@media (max-width: 360px) {
+
+    .modal-cuadro {
+        width: calc(100% - 20px);
+        padding: var(--espacio-sm);
+    }
+
+    .opcion-tamano {
+        font-size: 0.9rem;
+    }
+
+    .nav__catalogo {
+        grid-template-columns: 1fr;
+    }
+
+    .boton-categoria {
+        font-size: 0.85rem;
+        padding: 9px 6px;
+    }
 }
