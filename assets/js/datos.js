@@ -447,14 +447,14 @@ const productos = [
 
     {
         id: "hollow-knight",
-        categoria: "personajes",
+        categoria: "parejas",
         nombre: "Hollow Knight",
         precio: 45000,
         imagen: "assets/img/catálogo/hollow-knight.png",
         alt: "Hollow Knight tejido a crochet con cuerpo oscuro y máscara blanca característica.",
         historia: "En un reino silencioso lleno de secretos, un pequeño caballero se adentra en lo desconocido. Una pieza inspirada en la exploración, el misterio y los mundos que esperan ser descubiertos.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes · Dúo"
     },
 
     {
@@ -1095,7 +1095,7 @@ const productos = [
         id: "llaveros-studio-ghibli",
         categoria: "regalo",
         nombre: "Llaveros Studio Ghibli",
-        precio: 15000,
+        precio: 20000,
         imagen: "assets/img/catálogo/llaveros-studio ghibli.png",
         alt: "Conjunto de pequeños llaveros tejidos a crochet inspirados en personajes de Studio Ghibli.",
         historia: "Pequeños personajes inspirados en mundos donde la naturaleza, la magia y las emociones se encuentran. Un detalle para llevar contigo un pedacito de esas historias.",

@@ -1,8 +1,67 @@
+// ========== ELEMENTOS DEL DOM ==========
 const contenedor = document.querySelector("#contenedor-productos");
+const buscador = document.querySelector("#buscador");
+const ordenador = document.querySelector("#ordenador");
+const paginacion = document.querySelector("#paginacion");
+const botonesCategoria = document.querySelectorAll(".boton-categoria");
+
+// ========== ESTADO ==========
+let estado = {
+    busqueda: "",
+    categoria: "todos",
+    orden: "defecto",
+    pagina: 1
+};
+
+const POR_PAGINA = 9;
+
+const productosBarajados = [...productos].sort(function() {
+    return Math.random() - 0.5;
+});
+
+// ========== FUNCIÓN PRINCIPAL DE RENDER ==========
+function renderizar() {
+    
+    let lista = productosBarajados;
+
+    
+    if (estado.categoria !== "todos") {
+        lista = lista.filter(function(producto) {
+            return producto.categoria === estado.categoria;
+        });
+    }
+
+    
+    if (estado.busqueda !== "") {
+        lista = lista.filter(function(producto) {
+            return producto.nombre.toLowerCase().includes(estado.busqueda);
+        });
+    }
+
+    
+    if (estado.orden === "precio-menor") {
+        lista = [...lista].sort((a, b) => a.precio - b.precio);
+    } else if (estado.orden === "precio-mayor") {
+        lista = [...lista].sort((a, b) => b.precio - a.precio);
+    } else if (estado.orden === "alfabetico") {
+        lista = [...lista].sort((a, b) => a.nombre.localeCompare(b.nombre));
+    }
+
+   
+    const totalPaginas = Math.ceil(lista.length / POR_PAGINA);
+    const inicio = (estado.pagina - 1) * POR_PAGINA;
+    const fin = inicio + POR_PAGINA;
+    const paginaActual = lista.slice(inicio, fin);
+
+  
+    mostrarProductos(paginaActual);
+
+  
+    mostrarPaginacion(totalPaginas);
+}
 
 function mostrarProductos(lista) {
     let html = "";
-
     lista.forEach(function(producto) {
         html += `
             <article class="tarjeta">
@@ -17,29 +76,45 @@ function mostrarProductos(lista) {
             </article>
         `;
     });
-
     contenedor.innerHTML = html;
 }
 
-mostrarProductos(productos);
+function mostrarPaginacion(totalPaginas) {
+    let html = "";
+    for (let i = 1; i <= totalPaginas; i++) {
+        html += `<button class="boton-pagina" data-pagina="${i}">${i}</button>`;
+    }
+    paginacion.innerHTML = html;
 
+    const botonesPagina = document.querySelectorAll(".boton-pagina");
+    botonesPagina.forEach(function(boton) {
+        boton.addEventListener("click", function() {
+            estado.pagina = Number(boton.dataset.pagina);
+            renderizar();
+        });
+    });
+}
 
+// ========== EVENTOS ==========
+buscador.addEventListener("input", function() {
+    estado.busqueda = buscador.value.trim().toLowerCase();
+    estado.pagina = 1;   // reiniciar paginación al buscar
+    renderizar();
+});
 
-const botonesCategoria = document.querySelectorAll(".boton-categoria");
+ordenador.addEventListener("change", function() {
+    estado.orden = ordenador.value;
+    estado.pagina = 1;
+    renderizar();
+});
 
 botonesCategoria.forEach(function(boton) {
     boton.addEventListener("click", function() {
-        const categoria = boton.dataset.categoria;
-
-        let productosFiltrados;
-        if (categoria === "todos") {
-            productosFiltrados = productos;
-        } else {
-            productosFiltrados = productos.filter(function(producto) {
-                return producto.categoria === categoria;
-            });
-        }
-
-        mostrarProductos(productosFiltrados);
+        estado.categoria = boton.dataset.categoria;
+        estado.pagina = 1;
+        renderizar();
     });
 });
+
+// ========== ARRANQUE ==========
+renderizar();

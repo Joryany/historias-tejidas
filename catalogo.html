@@ -9,13 +9,13 @@
 </head>
 
 <body>
-     <header>
+    <header>
         <img src="assets/img/logo-sin-texto.png"
             alt="Logo de historias tejidas, un oso y conejos tejidos abrazando un corazón, con el nombre del emprendimiento en grande.">
         <nav>
             <a href="index.html">Inicio</a>
             <a href="catalogo.html" id="nav__a--activo">Catálogo</a>
-            <a href="personaliza.html" >Personaliza</a>
+            <a href="personaliza.html">Personaliza</a>
             <a href="carrito.html" id="nav__a--carrito">
                 <img id="carrito" src="assets/icons/carrito3.png" alt="Icono de carrito">
             </a>
@@ -23,7 +23,8 @@
     </header>
     <main>
         <section class="hero">
-            <img src="assets/img/flores-de-cerezo.png" alt="En un fondo rosado claro en la zona derecha hay flores de cerezo repartidas por dicha zona.">
+            <img src="assets/img/flores-de-cerezo.png"
+                alt="En un fondo rosado claro en la zona derecha hay flores de cerezo repartidas por dicha zona.">
             <div class="hero-overlay"></div>
             <div class="container">
                 <h2>Nuestras creaciones</h2>
@@ -35,19 +36,33 @@
 
         <section class="catálogo">
 
-            <div class="nav__catalogo">
-                <button class="boton-categoria" data-categoria="todos">Todos</button>
-                <button class="boton-categoria" data-categoria="animales">Animales</button>
-                <button class="boton-categoria" data-categoria="personajes">Personajes</button>
-                <button class="boton-categoria" data-categoria="parejas">Parejas</button>
-                <button class="boton-categoria" data-categoria="regalo">Regalos</button>
-            </div>
+            <section class="catalogo__buscadores">
+                <div class="controles">
+                    <input type="search" id="buscador" placeholder="Buscar producto..." class="buscador">
+
+                    <select id="ordenador" class="ordenador">
+                        <option value="defecto">Ordenar por...</option>
+                        <option value="precio-menor">Precio: menor a mayor</option>
+                        <option value="precio-mayor">Precio: mayor a menor</option>
+                        <option value="alfabetico">Nombre: A-Z</option>
+                    </select>
+                </div>
+
+                <div class="nav__catalogo">
+                    <button class="boton-categoria" data-categoria="todos">Todos</button>
+                    <button class="boton-categoria" data-categoria="animales">Animales</button>
+                    <button class="boton-categoria" data-categoria="personajes">Personajes</button>
+                    <button class="boton-categoria" data-categoria="parejas">Parejas</button>
+                    <button class="boton-categoria" data-categoria="regalo">Regalos</button>
+                </div>
+            </section>
 
             <div class="tarjeta-container" id="contenedor-productos"></div>
+            <div class="paginacion" id="paginacion"></div>
 
         </section>
 
-        
+
 
     </main>
 
@@ -56,7 +71,7 @@
 
 
 
-    
+
     <footer>
 
 
@@ -69,7 +84,7 @@
             </div>
 
             <div class="cont-columna">
-                
+
                 <div class="footer-columna">
 
                     <h3>Navegación</h3>

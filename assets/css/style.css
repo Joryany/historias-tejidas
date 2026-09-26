@@ -1298,7 +1298,6 @@ nav #nav__a--activo-:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--espacio-sm);
-    margin-bottom: var(--espacio-lg);
 }
 
 .boton-categoria {
@@ -1428,3 +1427,83 @@ nav #nav__a--activo-:hover {
         padding: 9px 6px;
     }
 }
+
+/* ====== CONTROLES DEL CATÁLOGO ====== */
+
+.controles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-sm);
+    justify-content: center;
+}
+
+.buscador,
+.ordenador {
+    padding: var(--boton-y) var(--boton-x);
+    border: 2px solid var(--rosa-suave);
+    border-radius: var(--radio);
+    background-color: var(--rosa-fondo);
+    color: var(--rosa-principal);
+    font-size: var(--texto);
+    font-family: inherit;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    gap: var(--espacio-xs);
+    margin-top: var(--espacio-lg);
+}
+
+.boton-pagina {
+    background: var(--rosa-palido);
+    border: 2px solid var(--rosa-suave);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--rosa-principal);
+    font-weight: var(--negrita);
+    cursor: pointer;
+    transition: background-color var(--transicion), color var(--transicion);
+}
+
+.boton-pagina:hover {
+    background: var(--frambuesa);
+    color: var(--rosa-crema);
+}
+
+/* ====== RESPONSIVE ====== */
+
+@media (max-width: 600px) {
+    .controles {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buscador,
+    .ordenador {
+        width: 100%;
+    }
+
+    .nav__catalogo {
+        gap: var(--espacio-xs);
+    }
+
+    .boton-categoria {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.7rem;
+    }
+}
+
+/* ====== Busqueda + categorias ====== */
+
+.catalogo__buscadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--espacio-sm);
+
+}
+
+
