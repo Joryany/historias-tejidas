@@ -188,7 +188,20 @@ const productos = [
         alt: "Amigurumi tejidos sobre pulpos multicolores los cuales representan una emoción diferente.",
         historia: "Colorido y expresivo, cada pequeño pulpo representa una emoción diferente y una forma única de acompañarte.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+    opciones: [
+        {
+            nombre: "Color",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" }
+            ]
+        }
+    ]
     },
 
     {
@@ -837,7 +850,7 @@ const productos = [
     {
         id: "novio-pareja",
         categoria: "parejas",
-        nombre: "Chico casual",
+        nombre: "Chico deportivo",
         precio: 45000,
         imagen: "assets/img/catálogo/novio-pareja.png",
         alt: "Muñeco de un chico casual con una camisa de futbol.",
@@ -849,7 +862,7 @@ const productos = [
     {
         id: "novio-rosado",
         categoria: "parejas",
-        nombre: "Chico deporte",
+        nombre: "Chico casual",
         precio: 48000,
         imagen: "assets/img/catálogo/novio-rosa.png",
         alt: "Muñeco de novio tejido a crochet con un traje deportivo o representativo del tenis.",
@@ -859,7 +872,7 @@ const productos = [
     },
 
         {
-        id: "novia-elegante",
+        id: "chica-elegante",
         categoria: "parejas",
         nombre: "Chica elegante",
         precio: 50000,
@@ -932,7 +945,8 @@ const productos = [
         alt: "Par de aretes tejidos con flores de girasol amarillas y centros marrones.",
         historia: "Pequeños girasoles para llevar un pedacito de luz contigo. Inspirados en la alegría y la vitalidad que hacen florecer hasta los días más grises.",
         materiales: "Hilo de algodón mercerizado y ganchos metálicos para aretes.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: []
     },
 
     {
@@ -944,7 +958,8 @@ const productos = [
         alt: "Par de aretes tejidos con flores de sakura rosadas y pequeños detalles en el centro.",
         historia: "Delicadas flores de sakura que recuerdan que la belleza también puede estar en lo pasajero. Un detalle inspirado en la primavera, la delicadeza y los nuevos comienzos.",
         materiales: "Hilo de algodón mercerizado y ganchos metálicos para aretes.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: []
     },
 
     {
