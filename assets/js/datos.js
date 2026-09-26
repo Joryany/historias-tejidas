@@ -11,7 +11,18 @@ const productos = [
         alt: "Un amigurumi tejido sobre una abejita amarilla con rayas negras y sus alas azules.",
         historia: "Pequeña y trabajadora, esta abejita lleva consigo un toque de alegría para endulzar cualquier día.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
+
     },
     {
         id: "ballena",
@@ -22,7 +33,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre una ballena azul, tirando agua",
         historia: "Tranquila y soñadora, esta pequeña ballena recorre nuevos mares en busca de un lugar al que llamar hogar.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
     {
         id: "canguro",
@@ -44,7 +65,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre un capibara con una naranja en su cabeza.",
         historia: "Con su pequeña naranja y su espíritu tranquilo, este capibara invita a disfrutar de las cosas sencillas.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -56,7 +87,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre un conejo marron con ropita a su talla.",
         historia: "Tierno y curioso, este conejito está listo para acompañarte en nuevas aventuras.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -68,7 +109,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre un dinosaurio con cuerno amarrillo.",
         historia: "Con su pequeño cuerno amarillo, este dinosaurio conserva el espíritu aventurero de una época perdida.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -104,7 +155,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre una foca blanca pequeña.",
         historia: "Pequeña y tranquila, esta foca trae consigo un pedacito de mar para acompañar momentos especiales.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -128,7 +189,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre un monito marrón con una banana en las manos.",
         historia: "Curioso y juguetón, este pequeño mono siempre está preparado para una nueva aventura con su banana en mano.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -140,7 +211,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre un oso blanco con ropa tejida y bufanda.",
         historia: "Abrigado y tierno, este osito busca un nuevo hogar donde compartir momentos llenos de cariño.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -152,7 +233,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre un panda pequeño.",
         historia: "Tranquilo y adorable, este pequeño panda nació para convertirse en un compañero especial.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -164,7 +255,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre un pato blanco y pico narranja.",
         historia: "Curioso y aventurero, este pequeño pato está listo para salir del estanque y descubrir nuevos caminos.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -200,8 +301,17 @@ const productos = [
                 { nombre: "Azul",     value: "azul" },
                 { nombre: "Verde",    value: "verde" }
             ]
-        }
-    ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
+    
     },
 
     {
@@ -213,7 +323,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre una tortuga bebé la cual es blanquita y pequeña.",
         historia: "Pequeña y delicada, esta tortuguita comienza su viaje en busca de un nuevo hogar.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     // PERSONAJES
@@ -227,7 +347,17 @@ const productos = [
         alt: "Aang tejido a crochet con túnica naranja y amarilla y flecha azul en la frente.",
         historia: "Un pequeño maestro del aire que lleva consigo la misión de mantener el equilibrio. Aang representa la paz, la amistad y el valor de afrontar grandes desafíos sin perder la alegría.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -239,7 +369,17 @@ const productos = [
         alt: "Baymax tejido a crochet, de color blanco, cuerpo redondeado y ojos negros.",
         historia: "Creado para cuidar, Baymax demuestra que a veces los gestos más sencillos son los que más importan. Un compañero que representa cariño, protección y amistad.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -251,7 +391,17 @@ const productos = [
         alt: "Betty Boop tejida a crochet con cabello negro y vestido rojo.",
         historia: "Con su inconfundible estilo y personalidad, Betty Boop trae consigo el encanto de una época llena de música y glamour. Una pieza para quienes disfrutan de lo clásico y atrevido.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -263,7 +413,17 @@ const productos = [
         alt: "Bill Cipher tejido a crochet, con forma triangular amarilla, un ojo y extremidades.",
         historia: "Un pequeño triángulo dispuesto a convertir cualquier día tranquilo en un misterio. Bill Cipher representa el caos, lo extraño y esas historias que nunca son lo que parecen.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -275,7 +435,17 @@ const productos = [
         alt: "BMO tejido a crochet, de color verde, con forma de consola y botones en el frente.",
         historia: "Entre juegos, aventuras y conversaciones inesperadas, BMO demuestra que la amistad puede aparecer en los lugares más curiosos. Un pequeño compañero lleno de imaginación y diversión.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -287,7 +457,17 @@ const productos = [
         alt: "Burro tejido a crochet de color gris, con orejas largas y expresión tierna.",
         historia: "Tranquilo y noble, este pequeño burro recuerda que no todos los héroes necesitan llamar la atención. Su historia habla de paciencia, humildad y compañía.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -299,7 +479,17 @@ const productos = [
         alt: "La Novia Cadáver tejida a crochet, con piel azulada, vestido de novia y detalles esqueléticos.",
         historia: "Entre flores marchitas y una historia que desafía la muerte, esta novia guarda una historia de amor, pérdida y esperanza. Una pieza para quienes encuentran belleza en lo diferente.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -311,7 +501,17 @@ const productos = [
         alt: "El Chavo del 8 tejido a crochet con su ropa característica, gorra y expresión sonriente.",
         historia: "Desde una vecindad llena de ocurrencias, El Chavo convirtió las cosas sencillas en grandes aventuras. Una pieza inspirada en la nostalgia, el humor y los recuerdos de infancia.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -323,7 +523,17 @@ const productos = [
         alt: "Coco tejido a crochet con rostro de calavera, ropa característica y una guitarra.",
         historia: "Entre música, recuerdos y una familia que nunca olvida a los suyos, Coco nos recuerda la importancia de mantener vivas nuestras raíces. Una pieza llena de memoria, tradición y cariño.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -335,7 +545,17 @@ const productos = [
         alt: "Coraje tejido a crochet de color rosado, con orejas grandes y expresión asustada.",
         historia: "Aunque tenga miedo, Coraje siempre encuentra la manera de proteger a quienes quiere. Una historia que recuerda que ser valiente no significa no tener miedo, sino continuar a pesar de él.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -347,7 +567,17 @@ const productos = [
         alt: "Cruella de Vil tejida a crochet con cabello blanco y negro y vestimenta característica.",
         historia: "Con su cabello bicolor y su estilo imposible de ignorar, Cruella convierte cada aparición en un espectáculo. Una pieza para quienes disfrutan de personajes intensos, elegantes y extravagantes.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -359,7 +589,17 @@ const productos = [
         alt: "Dobby tejido a crochet con orejas grandes, túnica y expresión tierna.",
         historia: "Un pequeño elfo que soñaba con ser libre y que demostró que la lealtad puede ser enorme incluso en un cuerpo pequeño. Una pieza inspirada en la amistad, la libertad y el cariño.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -371,7 +611,17 @@ const productos = [
         alt: "Frieren tejida a crochet, con cabello claro, orejas élficas y vestimenta característica.",
         historia: "Una maga elfa que ha vivido durante siglos y que aprende que el tiempo puede cambiar el significado de los recuerdos. Una pieza inspirada en la nostalgia, los vínculos y el valor de apreciar los momentos compartidos.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -383,7 +633,17 @@ const productos = [
         alt: "Freddie Mercury tejido a crochet con bigote, vestimenta característica y expresión enérgica.",
         historia: "Una figura llena de energía para alguien que convirtió el escenario en su propio universo. Inspirado en la música, la expresión artística y la libertad de ser inolvidable.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -395,7 +655,17 @@ const productos = [
         alt: "Goku tejido a crochet con cabello azul y vestimenta naranja.",
         historia: "Un guerrero que nunca deja de entrenar, aprender y superar sus propios límites. Esta pieza representa perseverancia, amistad y la determinación de seguir avanzando.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -407,17 +677,27 @@ const productos = [
         alt: "Grinch tejido a crochet de color verde con expresión característica y ropa navideña.",
         historia: "Detrás de una apariencia gruñona puede esconderse un corazón capaz de cambiar. El Grinch recuerda que nunca es demasiado tarde para descubrir el valor de compartir y querer.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
-        id: "gru",
+        id: "groot",
         categoria: "personajes",
-        nombre: "Gru",
+        nombre: "Groot",
         precio: 45000,
         imagen: "assets/img/catálogo/gru.png",
-        alt: "Gru tejido a crochet con cabeza alargada, expresión seria y bufanda.",
-        historia: "Lo que comenzó como una historia de villanía terminó convirtiéndose en una historia de familia. Gru representa los cambios inesperados que ocurren cuando encontramos personas que realmente nos importan.",
+        alt: "groot personaje de guardianes de la galaxia, esta en version niño en maceta.",
+        historia: "Para regalar a aquellos que te sacrificarías sin pensarlo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes"
     },
@@ -431,7 +711,17 @@ const productos = [
         alt: "Hada tejida a crochet con vestido, alas y una varita mágica.",
         historia: "Entre alas, magia y sueños, esta pequeña hada parece haber salido de un cuento. Una pieza para quienes todavía encuentran un poco de magia en las cosas cotidianas.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -443,7 +733,17 @@ const productos = [
         alt: "Harry Potter tejido a crochet con gafas, cicatriz en la frente y túnica.",
         historia: "Con una cicatriz y una historia mucho más grande de lo que imaginaba, Harry aprendió que la amistad puede ser tan poderosa como cualquier hechizo. Una pieza inspirada en valentía, amistad y magia.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -455,7 +755,17 @@ const productos = [
         alt: "Hipo tejido a crochet con vestimenta de vikingo y expresión decidida.",
         historia: "Un joven que aprendió que comprender al otro puede cambiar por completo la manera de ver el mundo. Hipo representa curiosidad, valentía y el vínculo entre humanos y dragones.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -479,7 +789,17 @@ const productos = [
         alt: "Jinx tejida a crochet con cabello azul largo y vestimenta característica.",
         historia: "Colorida, impredecible y siempre preparada para causar algún desastre, Jinx convierte el caos en parte de su identidad. Una pieza para quienes disfrutan de personajes intensos y fuera de lo común.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -491,7 +811,17 @@ const productos = [
         alt: "Winnie the Pooh tejido a crochet con su apariencia característica y colores amarillos y rojos.",
         historia: "Un oso pequeño con una gran capacidad para encontrar felicidad en las cosas sencillas. Pooh representa la amistad, la tranquilidad y esos momentos que hacen que un día común sea especial.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -503,7 +833,17 @@ const productos = [
         alt: "Luffy tejido a crochet con sombrero de paja y vestimenta característica.",
         historia: "Con su sombrero de paja y un sueño enorme, Luffy navega buscando libertad y aventuras junto a su tripulación. Una pieza inspirada en amistad, determinación y sueños que parecen imposibles.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -515,7 +855,17 @@ const productos = [
         alt: "Mafalda tejida a crochet con cabello negro y vestido rojo.",
         historia: "Pequeña, curiosa y con muchas preguntas, Mafalda observa el mundo con una mirada que va mucho más allá de su edad. Una pieza inspirada en la curiosidad, la reflexión y el humor.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -527,7 +877,17 @@ const productos = [
         alt: "My Melody tejida a crochet de color rosado, con orejas largas y capucha característica.",
         historia: "Dulce, tierna y siempre acompañada de su característico estilo, My Melody lleva consigo una sensación de amistad y ternura. Un pequeño personaje para quienes aman los detalles adorables.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -539,7 +899,17 @@ const productos = [
         alt: "Michael Jackson tejido a crochet con vestimenta y apariencia características.",
         historia: "Una figura inspirada en uno de los artistas más reconocibles de la música popular. Su historia está ligada al baile, el espectáculo y una forma de convertir cada presentación en un momento memorable.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -551,7 +921,17 @@ const productos = [
         alt: "Hatsune Miku tejida a crochet con cabello azul largo y vestimenta característica.",
         historia: "Una voz nacida de la tecnología que terminó convirtiéndose en un fenómeno musical mundial. Miku representa creatividad, música y las nuevas formas de expresión artística.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -563,7 +943,17 @@ const productos = [
         alt: "Minion tejido a crochet de color amarillo, con overol azul y ojos grandes.",
         historia: "Pequeño, amarillo y siempre dispuesto a meterse en algún problema, un Minion nunca parece aburrirse. Una pieza llena de humor, travesuras y compañerismo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -575,7 +965,17 @@ const productos = [
         alt: "Mulán tejida a crochet con cabello negro y vestido de colores azul y rojo.",
         historia: "Una joven que desafió las expectativas para proteger a su familia y demostrar de qué era capaz. Mulán representa valentía, determinación y la fuerza de seguir el propio camino.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -587,7 +987,17 @@ const productos = [
         alt: "Perry el Ornitorrinco tejido a crochet de color azul con sus características distintivas.",
         historia: "De día parece una mascota tranquila; en secreto, es un agente dispuesto a salvar el mundo. Perry representa aventura, humor y la idea de que nunca sabes qué puede esconder alguien.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -599,7 +1009,17 @@ const productos = [
         alt: "Pochita tejido a crochet en su forma de pequeño perro demonio.",
         historia: "Pequeño, adorable y mucho más poderoso de lo que aparenta, Pochita se convierte en uno de los compañeros más importantes de Denji. Una pieza inspirada en lealtad, cariño y compañerismo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -611,7 +1031,30 @@ const productos = [
         alt: "Personaje REPO tejido a crochet con apariencia oscura y una boca que puede abrirse.",
         historia: "Con una apariencia inquietante y una boca que puede abrirse de forma inesperada, REPO no pasa desapercibido. Una pieza inspirada en el misterio y el terror del videojuego.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+            {
+            nombre: "Color",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" }
+            ]
+        },
+        {
+
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+            
+        ]
     },
 
     {
@@ -623,7 +1066,17 @@ const productos = [
         alt: "Snoopy tejido a crochet acostado, de color blanco con detalles negros.",
         historia: "Snoopy demuestra que algunas de las mejores aventuras también pueden terminar en una buena siesta. Una pieza tranquila y adorable inspirada en la amistad y la comodidad.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -635,7 +1088,17 @@ const productos = [
         alt: "Spider-Man tejido a crochet con traje rojo y azul y diseño de máscara.",
         historia: "Entre telarañas, responsabilidad y grandes desafíos, Spider-Man demuestra que tener poderes también significa aprender a usarlos para ayudar. Una pieza inspirada en heroísmo y perseverancia.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -647,7 +1110,17 @@ const productos = [
         alt: "Totoro tejido a crochet de color gris, con orejas grandes y expresión tierna.",
         historia: "Una criatura del bosque que aparece como si siempre hubiera estado esperando entre los árboles. Totoro representa imaginación, naturaleza y la magia de mirar el mundo con curiosidad.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -659,7 +1132,17 @@ const productos = [
         alt: "Vegeta tejido a crochet con cabello negro y vestimenta característica.",
         historia: "Orgulloso, competitivo y decidido a superar sus propios límites, Vegeta demuestra que el crecimiento también puede surgir de los desafíos. Una pieza inspirada en fuerza, perseverancia y evolución.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -671,7 +1154,17 @@ const productos = [
         alt: "Yoda tejido a crochet de color verde, con orejas grandes y túnica.",
         historia: "Pequeño en tamaño, pero enorme en sabiduría, Yoda ha dedicado su vida a comprender la Fuerza. Una pieza inspirada en paciencia, conocimiento y fortaleza interior.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
 
@@ -688,7 +1181,25 @@ const productos = [
         alt: "Chimuelo y Furia Luminosa tejidos a crochet, uno de color negro y otro de color claro.",
         historia: "Dos dragones diferentes que encuentran compañía y confianza el uno en el otro. Una historia sobre conexión, libertad y esos vínculos que nacen cuando alguien nos comprende.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Personajes",
+            items: [
+                { nombre: "Solo Chimuelo",         value: "chimuelo",  precio: 50000 },
+                { nombre: "Solo Furia Luminosa",   value: "furia",     precio: 50000 },
+                { nombre: "Los dos juntos",        value: "ambos",     precio: 85000 }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            ]
+        }
+    ]
     },
 
     {
@@ -700,7 +1211,24 @@ const productos = [
         alt: "Dos focas tejidas a crochet de tonos gris y blanco con cuerpos redondeados.",
         historia: "Dos pequeñas focas que parecen hechas para compartir aventuras. Una historia sencilla sobre compañía, ternura y la diversión de no estar nunca solo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Foca",         value: "foca",  precio: 30000 },
+                { nombre: "Los dos juntos",        value: "ambos",     precio: 65000 }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            ]
+        }
+    ]
     },
 
     {
@@ -712,7 +1240,25 @@ const productos = [
         alt: "Dos personajes tejidos a crochet inspirados en fuego y agua de la película Elementos.",
         historia: "Dos elementos completamente diferentes que terminan encontrando una conexión inesperada. Una historia sobre contrastes, equilibrio y la posibilidad de encontrar algo en común.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Ember",         value: "fuego",  precio: 45000 },
+                { nombre: "Solo Wade",   value: "agua",     precio: 45000 },
+                { nombre: "Los dos juntos",        value: "ambos",     precio: 80000 }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            ]
+        }
+    ]
     },
 
     {
@@ -731,12 +1277,37 @@ const productos = [
         id: "pareja-jardin",
         categoria: "parejas",
         nombre: "Dúo más allá del jardín",
-        precio: 85000,
+        precio: 90000,
         imagen: "assets/img/catálogo/jardin-pareja.png",
         alt: "Dos hermanos de la serie más allá del jardin, dos amigurumis.",
         historia: "Representa esa guía que llegamos a necesitar cuando estamos perdidos, asustados y con ganas de rendirnos.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Dúo"
+        etiqueta: "Amigurumi · Dúo",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Wirt",         value: "wirt",  precio: 50000 },
+                { nombre: "Solo Howl",   value: "",     precio: 50000 },
+                { nombre: "Los dos juntos",        value: "ambos",     precio: 90000 }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            ]
+        },
+        {
+            nombre: "Sapito",
+            items: [
+                { nombre: "Sin sapito", value: "sin",   multiplicador: 1.00 },
+                { nombre: "Con sapito", value: "con",   multiplicador: 1.30 }
+            ]
+        }
+    ]
     },
 
     {
@@ -760,13 +1331,31 @@ const productos = [
         alt: "Sophie y Howl tejidos a crochet como pareja de personajes de El castillo ambulante.",
         historia: "Dos personajes unidos por una historia donde la magia, el cambio y el cariño se entrelazan. Una pieza inspirada en la conexión entre Sophie y Howl y en los mundos extraordinarios que habitan.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Sophie",         value: "sophie",  precio: 50000 },
+                { nombre: "Solo Howl",   value: "howl",     precio: 50000 },
+                { nombre: "Los dos juntos",        value: "ambos",     precio: 90000 }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            ]
+        }
+    ]
     },
 
     {
         id: "pareja-chicas",
         categoria: "parejas",
-        nombre: "Dúo de chicas",
+        nombre: "Dúo chicas",
         precio: 85000,
         imagen: "assets/img/catálogo/pareja-chica.png",
         alt: "Dos personajes femeninos tejidos a crochet como una pareja.",
@@ -784,7 +1373,25 @@ const productos = [
         alt: "Coraline y Wybie tejidos a crochet, representados como un dúo de personajes.",
         historia: "Una puerta hacia otro mundo, misterios por descubrir y dos jóvenes que terminan enfrentando lo desconocido. Una pieza inspirada en la aventura, la curiosidad y la amistad.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Coraline",         value: "coraline",  precio: 50000 },
+                { nombre: "Solo Wybie",   value: "wybie",     precio: 50000 },
+                { nombre: "Los dos juntos",        value: "ambos",     precio: 85000 }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            ]
+        }
+    ]
     },
 
     {
@@ -796,7 +1403,25 @@ const productos = [
         alt: "Edward Scissorhands y su pareja tejidos a crochet con una estética gótica y romántica.",
         historia: "Una historia de amor diferente, marcada por la ternura, la incomprensión y un personaje que solo quería encontrar un lugar donde pertenecer. Una pieza con estética gótica y romántica.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Edward",         value: "edawrd",  precio: 50000 },
+                { nombre: "Solo pareja",   value: "pareja",     precio: 50000 },
+                { nombre: "Los dos juntos",        value: "ambos",     precio: 90000 }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            ]
+        }
+    ]
     },
 
     {
@@ -820,7 +1445,24 @@ const productos = [
         alt: "Dos patitos amarillos tejidos a crochet con cuerpos pequeños y redondeados.",
         historia: "Dos pequeños patitos que parecen destinados a ir juntos. Una pieza tierna inspirada en la amistad, la compañía y esos pequeños compañeros que alegran cualquier espacio.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo  patito",         value: "pato",  precio: 30000 },
+                { nombre: "Los dos juntos",        value: "ambos",     precio: 60000 }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            ]
+        }
+    ]
     },
 
     {
@@ -832,19 +1474,47 @@ const productos = [
         alt: "Tom y Jerry tejidos a crochet como un dúo de personajes.",
         historia: "Dos rivales que pueden pasar el día persiguiéndose, pero que nunca dejan de formar parte de la misma historia. Un dúo lleno de humor, travesuras y nostalgia.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Tom",         value: "tom",  precio: 40000 },
+                { nombre: "Solo Jerry",   value: "jerry",     precio: 40000 },
+                { nombre: "Los dos juntos",        value: "ambos",     precio: 70000 }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            ]
+        }
+    ]
     },
 
     {
         id: "venom-spiderman",
         categoria: "personajes",
         nombre: "Spider-Man",
-        precio: 90000,
+        precio: 55000,
         imagen: "assets/img/catálogo/venon-spiderman.png",
         alt: "Venom y Spider-Man tejidos a crochet, uno negro y otro con traje rojo y azul.",
         historia: "Dos figuras enfrentadas por una relación marcada por el conflicto y la dualidad. Una pieza que reúne dos fuerzas opuestas y convierte ese contraste en una historia visual.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -856,7 +1526,17 @@ const productos = [
         alt: "Muñeco de un chico casual con una camisa de futbol.",
         historia: "Cuando las pasiones se trasmiten, y lo apoyas en sus sueños.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -868,7 +1548,17 @@ const productos = [
         alt: "Muñeco de novio tejido a crochet con un traje deportivo o representativo del tenis.",
         historia: "Cuando el deporte es su pasión, o simplemente es él.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
         {
@@ -880,7 +1570,17 @@ const productos = [
         alt: "Muñeca de chica tejida a crochet con estilo único.",
         historia: "Representa la chispa única que hizo que te enamorarás perdidamente de ella.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos"
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -892,7 +1592,17 @@ const productos = [
         alt: "Muñeca de novia tejida a crochet con un sueter y pantalon casual.",
         historia: "El día a día donde crean su historia juntos.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos"
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -904,7 +1614,17 @@ const productos = [
         alt: "Muñeca de novia tejida a crochet con ropa moderna.",
         historia: "Representa cada salida donde compartieron momentos únicos y mágicos juntos.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos"
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -916,7 +1636,17 @@ const productos = [
         alt: "Muñeca de novia tejida a crochet con detalles de muñeca.",
         historia: "Una pequeña chica hecha para conservar un recuerdo tierno.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos"
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -928,7 +1658,17 @@ const productos = [
         alt: "Muñeca de chica tejida a crochet con un mono y cabello rizado.",
         historia: "No importa que tan lejos este, siempre la llevarás en tu alma y corazón.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos"
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
 
@@ -1007,7 +1747,17 @@ const productos = [
         alt: "Broche tejido en forma de flor roja con centro decorativo y cierre posterior.",
         historia: "Una pequeña flor que encuentra su lugar donde quieras llevarla. Un detalle delicado inspirado en la belleza de la naturaleza y la elegancia de lo sencillo.",
         materiales: "Hilo de algodón y base metálica para broche.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (10 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (30 cm)",  value: "grande",  multiplicador: 1.50 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1019,7 +1769,17 @@ const productos = [
         alt: "Cactus decorativo tejido a crochet de color verde con forma cilíndrica.",
         historia: "Aunque crezca en lugares difíciles, el cactus encuentra la manera de seguir adelante. Este pequeño detalle representa resistencia, naturaleza y belleza sin necesidad de grandes cuidados.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Decoración · Regalos"
+        etiqueta: "Decoración · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1031,7 +1791,17 @@ const productos = [
         alt: "Cinta tejida a crochet para el cabello en un tono claro.",
         historia: "Un pequeño detalle para completar un estilo sin complicarlo. Esta cinta combina la delicadeza de lo tejido con la sencillez de un accesorio para todos los días.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1043,7 +1813,8 @@ const productos = [
         alt: "Diadema tejida decorada con pequeñas flores de colores.",
         historia: "Pequeñas flores que transforman una diadema cotidiana en un detalle especial. Inspirada en la primavera, la delicadeza y la alegría de llevar algo hecho a mano.",
         materiales: "Lana acrílica suave de grosor medio y base de diadema.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: []
     },
 
     {
@@ -1055,7 +1826,17 @@ const productos = [
         alt: "Flor amarilla tejida a crochet inspirada en la flor de Rapunzel, con hojas verdes.",
         historia: "Una pequeña flor inspirada en la magia de una historia donde la luz y la esperanza tienen un papel especial. Un detalle que representa renovación, belleza y nuevos comienzos.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Decoración · Regalos"
+        etiqueta: "Decoración · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1067,7 +1848,17 @@ const productos = [
         alt: "Girasol tejido a crochet con pétalos amarillos, centro marrón y tallo verde.",
         historia: "Siempre buscando la luz, el girasol se convirtió en símbolo de alegría y vitalidad. Una flor tejida para recordar que incluso los pequeños detalles pueden iluminar un espacio.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Decoración · Regalos"
+        etiqueta: "Decoración · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1079,7 +1870,17 @@ const productos = [
         alt: "Llavero tejido a crochet de Garfield en tamaño pequeño.",
         historia: "Garfield sabe que una buena siesta, algo de comida y evitar responsabilidades pueden ser todo un arte. Un pequeño compañero inspirado en el humor y la pereza más divertida.",
         materiales: "Hilo de algodón y argolla metálica para llavero.",
-        etiqueta: "Llavero · Regalos"
+        etiqueta: "Llavero · Regalos",
+        opciones: [
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.80 },
+                { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (15 cm)",  value: "grande",  multiplicador: 1.25 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1091,7 +1892,26 @@ const productos = [
         alt: "Conjunto de pequeños llaveros tejidos a crochet inspirados en Five Nights at Freddy's.",
         historia: "Pequeños personajes nacidos de una historia llena de misterios, sustos y noches que parecen no terminar. Un conjunto para llevar un poco de ese universo contigo.",
         materiales: "Hilo de algodón y argollas metálicas para llavero.",
-        etiqueta: "Llaveros · Regalos"
+        etiqueta: "Llaveros · Regalos",
+    opciones: [
+        {
+            nombre: "Personaje",
+            items: [
+                { nombre: "Freddy",       value: "freddy" },
+                { nombre: "Bonnie",       value: "bonnie" },
+                { nombre: "Chica",        value: "chica" },
+                { nombre: "Foxy",  value: "foxy" }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.80 },
+                { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (15 cm)",  value: "grande",  multiplicador: 1.25 }
+            ]
+        }
+    ]
     },
 
     {
@@ -1103,7 +1923,26 @@ const productos = [
         alt: "Conjunto de pequeños llaveros tejidos a crochet inspirados en Hora de Aventura.",
         historia: "Finn y sus amigos convierten cada día en una aventura diferente. Estos pequeños llaveros llevan consigo el espíritu de amistad, imaginación y diversión de ese mundo.",
         materiales: "Hilo de algodón y argollas metálicas para llavero.",
-        etiqueta: "Llaveros · Regalos"
+        etiqueta: "Llaveros · Regalos",
+    opciones: [
+        {
+            nombre: "Personaje",
+            items: [
+                { nombre: "Finn",       value: "finn" },
+                { nombre: "Jake",       value: "jake" },
+                { nombre: "Bmo",        value: "bmo" },
+                { nombre: "Trompi",  value: "trompi" }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.80 },
+                { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (15 cm)",  value: "grande",  multiplicador: 1.25 }
+            ]
+        }
+    ]
     },
 
     {
@@ -1115,7 +1954,28 @@ const productos = [
         alt: "Conjunto de pequeños llaveros tejidos a crochet inspirados en personajes de Studio Ghibli.",
         historia: "Pequeños personajes inspirados en mundos donde la naturaleza, la magia y las emociones se encuentran. Un detalle para llevar contigo un pedacito de esas historias.",
         materiales: "Hilo de algodón y argollas metálicas para llavero.",
-        etiqueta: "Llaveros · Regalos"
+        etiqueta: "Llaveros · Regalos",
+    opciones: [
+        {
+            nombre: "Personaje",
+            items: [
+                { nombre:"Sin cara",       value: "sin-cara" },
+                { nombre: "Totoro",       value: "totoro" },
+                { nombre: "Calcifer",        value: "calcifer" },
+                { nombre: "Jiji",  value: "jiji" },
+                { nombre: "Porco", value: "porco"},
+                { nombre: "Kodama", value: "kodama"}
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.80 },
+                { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00 },
+                { nombre: "Grande (15 cm)",  value: "grande",  multiplicador: 1.25 }
+            ]
+        }
+    ]
     },
 
     {
@@ -1127,19 +1987,46 @@ const productos = [
         alt: "Moña tejida a crochet de color rojo y tamaño grande.",
         historia: "Una gran moña roja para añadir un toque especial a cualquier estilo. Inspirada en el romance, la delicadeza y esos pequeños detalles que dicen mucho.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+        {
+            nombre: "Color",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Marrón", value: "marron"},
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        }
+    ]
     },
 
     {
         id: "monas-varios-colores",
         categoria: "regalo",
-        nombre: "Moñas surtidas",
+        nombre: "3 Moñas surtidas",
         precio: 20000,
         imagen: "assets/img/catálogo/moñas.png",
         alt: "Conjunto de moñas tejidas a crochet en diferentes colores.",
         historia: "Una colección de colores para que cada día tenga su propio estilo. Varias pequeñas piezas que celebran la creatividad, la variedad y la posibilidad de elegir según el momento.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+        {
+            nombre: "Color",
+            items: [
+                { nombre: "Monocromático", value: "monocromatico" },
+                { nombre: "Tierra",     value: "tierra" },
+                { nombre: "azul, blanco, negro",     value: "formal" },
+                { nombre: "rojo, azul, blanco",     value: "casual" }
+            ]
+        }
+    ]
     },
 
     {
@@ -1151,7 +2038,23 @@ const productos = [
         alt: "Moña grande y tupida tejida a crochet de color rojo.",
         historia: "Una moña con presencia, volumen y personalidad. Un accesorio pensado para convertir un detalle sencillo en el protagonista del look.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+        {
+            nombre: "Color",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Marrón", value: "marron"},
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        }
+    ]
     },
 
 
@@ -1164,19 +2067,65 @@ const productos = [
         alt: "Pañoleta tejida a crochet de color claro decorada con flores blancas.",
         historia: "Flores blancas tejidas sobre una pañoleta para crear un accesorio delicado y natural. Un detalle inspirado en la frescura, la elegancia y la primavera.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+        {
+            nombre: "Color de panñoleta",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Marrón", value: "marron"},
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        },
+        {
+            nombre: "Color de flores",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Marrón", value: "marron"},
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        }
+    ]
     },
 
     {
         id: "panoleta-roja",
         categoria: "regalo",
-        nombre: "Pañoleta roja",
+        nombre: "Pañoleta básica",
         precio: 28000,
         imagen: "assets/img/catálogo/pañoleta-roja.png",
         alt: "Pañoleta tejida a crochet de color rojo con detalles decorativos.",
         historia: "Un accesorio con un color intenso para quienes prefieren que sus detalles tengan personalidad. Una pañoleta que combina el trabajo artesanal con un estilo llamativo.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+        {
+            nombre: "Color",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Marrón", value: "marron"},
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        }
+    ]
     },
 
     {
@@ -1188,7 +2137,23 @@ const productos = [
         alt: "Pulsera tejida decorada con pequeñas flores de color rosado.",
         historia: "Pequeñas flores rosadas que convierten una pulsera en un detalle delicado. Inspirada en la primavera, la ternura y la belleza de llevar algo hecho especialmente a mano.",
         materiales: "Hilo de algodón y detalles decorativos.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+        {
+            nombre: "Color de flores",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Marrón", value: "marron"},
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        }
+    ]
     },
 
     {
@@ -1200,7 +2165,23 @@ const productos = [
         alt: "Pulsera tejida decorada con pequeños tulipanes.",
         historia: "Tulipanes tejidos para llevar un pequeño jardín alrededor de la muñeca. Un accesorio inspirado en la elegancia, la primavera y los nuevos comienzos.",
         materiales: "Hilo de algodón y detalles decorativos.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+        {
+            nombre: "Color de flores",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Marrón", value: "marron"},
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        }
+    ]
     },
 
     {
@@ -1212,7 +2193,23 @@ const productos = [
         alt: "Ramo tejido a crochet compuesto por varios tulipanes.",
         historia: "Un ramo que conserva la belleza de los tulipanes sin marchitarse. Una pieza pensada para regalar un recuerdo que pueda permanecer mucho más tiempo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Decoración · Regalos"
+        etiqueta: "Decoración · Regalos",
+        opciones: [
+        {
+            nombre: "Color de flores",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Marrón", value: "marron"},
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        },
+    ]
     },
 
     {
@@ -1224,7 +2221,22 @@ const productos = [
         alt: "Ramo tejido a crochet compuesto por varias flores amarillas.",
         historia: "Un ramo lleno de color para celebrar alegría, cariño y buenos momentos. Flores tejidas que pueden convertirse en un regalo duradero para alguien especial.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Decoración · Regalos"
+        etiqueta: "Decoración · Regalos",
+        opciones: [
+        {
+            nombre: "Color de flores",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        },
+    ]
     },
 
     {
@@ -1236,7 +2248,23 @@ const productos = [
         alt: "Ramo tejido a crochet compuesto por varias rosas rojas.",
         historia: "Las rosas rojas han acompañado durante siglos las historias de amor y pasión. Este ramo convierte ese símbolo clásico en un regalo tejido que puede conservarse como recuerdo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Decoración · Regalos"
+        etiqueta: "Decoración · Regalos",
+        opciones: [
+        {
+            nombre: "Color de flores",
+            items: [
+                { nombre: "Amarillo", value: "amarillo" },
+                { nombre: "Rojo",     value: "rojo" },
+                { nombre: "Rosa",     value: "rosa" },
+                { nombre: "Morado",   value: "morado" },
+                { nombre: "Azul",     value: "azul" },
+                { nombre: "Verde",    value: "verde" },
+                { nombre: "Marrón", value: "marron"},
+                { nombre: "Negro", value: "negro"},
+                { nombre: "Blanco", value: "blanco"}
+            ]
+        },
+    ]
     },
 
     {
