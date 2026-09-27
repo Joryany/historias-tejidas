@@ -1,0 +1,192 @@
+{
+        id: "pareja-chicas",
+        categoria: "parejas",
+        nombre: "Dúo chicas",
+        precio: 85000,
+        imagen: "assets/img/catálogo/pareja-chica.png",
+        alt: "Dos personajes femeninos tejidos a crochet como una pareja.",
+        historia: "Dos personajes que comparten un momento juntas y representan la cercanía que puede crecer entre dos personas. Una pieza pensada para celebrar amistad, compañía y vínculos especiales.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Parejas",
+        opciones: [
+            {
+                nombre: "Personalizar",
+                items: [
+                    { nombre: "Imagen", value: "imagen" },
+                    { nombre: "Personalizar", value: "personalizar" },
+                ]
+            },
+
+        ]
+
+
+    },
+
+    {
+        id: "pareja-moderna",
+        categoria: "parejas",
+        nombre: "Un momento juntas",
+        precio: 80000,
+        imagen: "assets/img/catálogo/pareja-moderna.png",
+        alt: "Dos personajes tejidos a crochet con vestimenta moderna, representados como pareja.",
+        historia: "Dos personas compartiendo un momento de una historia que todavía está escribiéndose. Una pieza que representa el amor cotidiano, la compañía y la construcción de recuerdos juntos.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Parejas"
+    },
+
+     {
+        id: "novio-pareja",
+        categoria: "parejas",
+        nombre: "Chico deportivo",
+        precio: 45000,
+        imagen: "assets/img/catálogo/novio-pareja.png",
+        alt: "Muñeco de un chico casual con una camisa de futbol.",
+        historia: "Cuando las pasiones se trasmiten, y lo apoyas en sus sueños.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Parejas",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "novio-rosado",
+        categoria: "parejas",
+        nombre: "Chico casual",
+        precio: 48000,
+        imagen: "assets/img/catálogo/novio-rosa.png",
+        alt: "Muñeco de novio tejido a crochet con un traje deportivo o representativo del tenis.",
+        historia: "Cuando el deporte es su pasión, o simplemente es él.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Parejas",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+
+{
+        id: "chica-elegante",
+        categoria: "parejas",
+        nombre: "Chica elegante",
+        precio: 50000,
+        imagen: "assets/img/catálogo/novia-estilo.png",
+        alt: "Muñeca de chica tejida a crochet con estilo único.",
+        historia: "Representa la chispa única que hizo que te enamorarás perdidamente de ella.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "novia-lisa",
+        categoria: "parejas",
+        nombre: "Chica casual",
+        precio: 45000,
+        imagen: "assets/img/catálogo/novia-liso.png",
+        alt: "Muñeca de novia tejida a crochet con un sueter y pantalon casual.",
+        historia: "El día a día donde crean su historia juntos.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "novia-moderna",
+        categoria: "parejas",
+        nombre: "Chica Moderna",
+        precio: 50000,
+        imagen: "assets/img/catálogo/novia-moderna.png",
+        alt: "Muñeca de novia tejida a crochet con ropa moderna.",
+        historia: "Representa cada salida donde compartieron momentos únicos y mágicos juntos.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "novia-muneca",
+        categoria: "parejas",
+        nombre: "Chica tierna",
+        precio: 45000,
+        imagen: "assets/img/catálogo/novia-muneca.png",
+        alt: "Muñeca de novia tejida a crochet con detalles de muñeca.",
+        historia: "Una pequeña chica hecha para conservar un recuerdo tierno.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "novia-rizos",
+        categoria: "parejas",
+        nombre: "Muñeca",
+        precio: 50000,
+        imagen: "assets/img/catálogo/novia-risos.png",
+        alt: "Muñeca de chica tejida a crochet con un mono y cabello rizado.",
+        historia: "No importa que tan lejos este, siempre la llevarás en tu alma y corazón.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Regalo especial · Regalos",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+    
+
+    

@@ -13,12 +13,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -35,12 +35,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -54,7 +54,17 @@ const productos = [
         alt: "Un amigurumi tejido sobre un canguro con su hijo canguro en su bolsa.",
         historia: "Siempre acompañado de su pequeño, este canguro representa el cariño, la protección y la compañía.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
     {
         id: "capibara",
@@ -67,12 +77,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -89,12 +99,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -111,12 +121,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -131,7 +141,31 @@ const productos = [
         alt: "Un amigurumi tejido sobre un dragon verde con alas rojas.",
         historia: "Entre alas y escamas, este pequeño dragón está listo para proteger y acompañar nuevas historias.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo", defecto: true },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" },
+                    { nombre: "Gris", value: "gris" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -143,7 +177,31 @@ const productos = [
         alt: "Un amigurumi tejido sobre un dragon alargado, rojo brillante.",
         historia: "Rojo y brillante, este dragón dejó su cueva para convertirse en el guardián de un nuevo hogar.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde", defecto: true },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" },
+                    { nombre: "Gris", value: "gris" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -157,12 +215,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -173,11 +231,32 @@ const productos = [
         categoria: "animales",
         nombre: "Gato",
         precio: 30000,
-        imagen: "assets/img/catálogo/gato.png",
+        imagen: "assets/img/catálogo/gatos.png",
         alt: "Un amigurumi tejido sobre un gato gordo de color gris sentado.",
         historia: "Gordito, tranquilo y amante de las siestas, este gatito está listo para encontrar un nuevo lugar donde descansar.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Blanco con rayas Amarillas", value: "blanco-amarillo" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Blanco", value: "blanco" },
+                    { nombre: "Gris", value: "gris", defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -191,12 +270,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -213,12 +292,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -235,12 +314,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -257,12 +336,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -277,7 +356,24 @@ const productos = [
         alt: "Un amigurumi tejido sobre un pinguino blanco con negro, el cual tiene un sombrero de colores.",
         historia: "Con su colorido sombrero, este pequeño pingüino lleva un toque de alegría incluso en los días más fríos.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Animales"
+        etiqueta: "Amigurumi · Animales",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            },
+            {
+                nombre: "Accesorio",
+                items: [
+                    { nombre: "Con sombrero", value: "con", multiplicador: 1.00, defecto: true },
+                    { nombre: "Sin sombrero", value: "sin", multiplicador: 0.85 }
+                ]
+            }
+        ]
     },
 
     {
@@ -290,28 +386,28 @@ const productos = [
         historia: "Colorido y expresivo, cada pequeño pulpo representa una emoción diferente y una forma única de acompañarte.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
-    opciones: [
-        {
-            nombre: "Color",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+        opciones: [
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado", defecto: true },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
-    
+
     },
 
     {
@@ -325,12 +421,25 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Animales",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Blanco", value: "blanco", defecto: true },
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" }
+
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -349,12 +458,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -371,12 +480,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -393,12 +502,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -415,12 +524,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -437,12 +546,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -459,12 +568,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -481,12 +590,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -503,12 +612,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -525,12 +634,19 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Cara",
+                items: [
+                    { nombre: "Calavera", value: "calavera", defecto: true },
+                    { nombre: "Humana", value: "human" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -547,12 +663,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -569,12 +685,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -591,12 +707,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -613,12 +729,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -635,12 +751,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -657,12 +773,23 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Color de cabello",
+                items: [
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Celeste", value: "celeste", defecto: true },
+                    { nombre: "Platiado", value: "platiado" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -679,12 +806,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -699,7 +826,24 @@ const productos = [
         alt: "groot personaje de guardianes de la galaxia, esta en version niño en maceta.",
         historia: "Para regalar a aquellos que te sacrificarías sin pensarlo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+            {
+                nombre: "Accesorio",
+                items: [
+                    { nombre: "Macetas", value: "maceta", multiplicador: 1.50 },
+                    { nombre: "Piernas", value: "piernas", multiplicador: 1.00, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -713,12 +857,49 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            },
+            {
+                nombre: "Color de falda + alas",
+                items: [
+                    { nombre: "Blanco", value: "blanco" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Amarillo", value: "amarillo", defecto: true },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" }
+
+                ]
+            },
+            {
+                nombre: "Color de camisa y medias",
+                items: [
+                    { nombre: "Blanco", value: "blanco" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde", defecto: true }
+
+                ]
+            },
+
+            {
+                nombre: "Tipo de flor, corona y falda",
+                items: [
+                    { nombre: "Girasoles", value: "girasol", defecto: true },
+                    { nombre: "rosa", value: "rosa", multiplicador: 1.20 }
+
                 ]
             }
         ]
@@ -735,12 +916,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -757,28 +938,17 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
     },
 
-    {
-        id: "hollow-knight",
-        categoria: "parejas",
-        nombre: "Hollow Knight",
-        precio: 45000,
-        imagen: "assets/img/catálogo/hollow-knight.png",
-        alt: "Hollow Knight tejido a crochet con cuerpo oscuro y máscara blanca característica.",
-        historia: "En un reino silencioso lleno de secretos, un pequeño caballero se adentra en lo desconocido. Una pieza inspirada en la exploración, el misterio y los mundos que esperan ser descubiertos.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes · Dúo"
-    },
 
     {
         id: "jinx",
@@ -791,12 +961,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -813,12 +983,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -835,12 +1005,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -857,12 +1027,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -879,12 +1049,43 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "osos-escandalosos",
+        categoria: "personajes",
+        nombre: "Osos Escandalosos",
+        precio: 30000,
+        imagen: "assets/img/catálogo/osos-escandalosos.png",
+        alt: "Tres Osos Escandalosos tejidos a crochet, representados como tres osos independientes.",
+        historia: "Pardo, Panda y Polar nunca necesitan mucho para convertir un día normal en una aventura. Tres hermanos con personalidades diferentes que comparten una misma historia de familia y amistad.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+            {
+                nombre: "Personaje",
+                items: [
+                    { nombre: "Pardo", value: "pardo", defecto: true },
+                    { nombre: "Panda", value: "panda" },
+                    { nombre: "Polar", value: "polar" },
+                    { nombre: "Los tres", value: "tres", multiplicador: 3.00 }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -901,12 +1102,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -923,12 +1124,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -945,12 +1146,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -967,12 +1168,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -989,12 +1190,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1011,12 +1212,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1034,26 +1235,27 @@ const productos = [
         etiqueta: "Amigurumi · Personajes",
         opciones: [
             {
-            nombre: "Color",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" }
-            ]
-        },
-        {
+                nombre: "Color",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Celeste", value: "celeste", defecto: true },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" }
+                ]
+            },
+            {
 
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
-            
+
         ]
     },
 
@@ -1068,12 +1270,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1090,12 +1292,33 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+    {
+        id: "venom-spiderman",
+        categoria: "personajes",
+        nombre: "Spider-Man",
+        precio: 55000,
+        imagen: "assets/img/catálogo/venon-spiderman.png",
+        alt: "Venom y Spider-Man tejidos a crochet, uno negro y otro con traje rojo y azul.",
+        historia: "Dos figuras enfrentadas por una relación marcada por el conflicto y la dualidad. Una pieza que reúne dos fuerzas opuestas y convierte ese contraste en una historia visual.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1112,12 +1335,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1134,12 +1357,23 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Color de cabello",
+                items: [
+                    { nombre: "Negro", value: "negro", defecto: true },
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Purpura", value: "purpura" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Celeste", value: "celeste" },
+                    { nombre: "Verde", value: "verde" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1156,12 +1390,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1175,31 +1409,67 @@ const productos = [
     {
         id: "chimuelo-furia-luminosa",
         categoria: "parejas",
-        nombre: "Chimuelo + Furia Luminosa",
+        nombre: "Pareja Chimuelo",
         precio: 85000,
         imagen: "assets/img/catálogo/chimuelo-pareja.png",
         alt: "Chimuelo y Furia Luminosa tejidos a crochet, uno de color negro y otro de color claro.",
         historia: "Dos dragones diferentes que encuentran compañía y confianza el uno en el otro. Una historia sobre conexión, libertad y esos vínculos que nacen cuando alguien nos comprende.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Parejas",
-    opciones: [
-        {
-            nombre: "Personajes",
-            items: [
-                { nombre: "Solo Chimuelo",         value: "chimuelo",  precio: 50000 },
-                { nombre: "Solo Furia Luminosa",   value: "furia",     precio: 50000 },
-                { nombre: "Los dos juntos",        value: "ambos",     precio: 85000 }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-            ]
-        }
-    ]
+        opciones: [
+            {
+                nombre: "Personajes",
+                items: [
+                    { nombre: "Solo Chimuelo", value: "chimuelo", precio: 50000 },
+                    { nombre: "Solo Furia Luminosa", value: "furia", precio: 50000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 85000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+    {
+        id: "hollow-knight",
+        categoria: "parejas",
+        nombre: "Hollow Knight",
+        precio: 90000,
+        imagen: "assets/img/catálogo/hollow-knight.png",
+        alt: "Hollow Knight tejido a crochet con cuerpo oscuro y máscara blanca característica.",
+        historia: "En un reino silencioso lleno de secretos, un pequeño caballero se adentra en lo desconocido. Una pieza inspirada en la exploración, el misterio y los mundos que esperan ser descubiertos.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Personajes · Dúo",
+        opciones: [
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Solo Hornet", value: "hornet", precio: 50000 },
+                    { nombre: "Solo el caballero", value: "caballero", precio: 50000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 90000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            },
+            {
+                nombre: "Oruga",
+                items: [
+                    { nombre: "Sin oruga", value: "sin", multiplicador: 1.00 },
+                    { nombre: "Con oruga", value: "con", multiplicador: 1.15, defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -1212,23 +1482,23 @@ const productos = [
         historia: "Dos pequeñas focas que parecen hechas para compartir aventuras. Una historia sencilla sobre compañía, ternura y la diversión de no estar nunca solo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Parejas",
-    opciones: [
-        {
-            nombre: "Combinación",
-            items: [
-                { nombre: "Foca",         value: "foca",  precio: 30000 },
-                { nombre: "Los dos juntos",        value: "ambos",     precio: 65000 }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-            ]
-        }
-    ]
+        opciones: [
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Foca", value: "foca", precio: 30000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 65000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1241,24 +1511,24 @@ const productos = [
         historia: "Dos elementos completamente diferentes que terminan encontrando una conexión inesperada. Una historia sobre contrastes, equilibrio y la posibilidad de encontrar algo en común.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Parejas",
-    opciones: [
-        {
-            nombre: "Combinación",
-            items: [
-                { nombre: "Solo Ember",         value: "fuego",  precio: 45000 },
-                { nombre: "Solo Wade",   value: "agua",     precio: 45000 },
-                { nombre: "Los dos juntos",        value: "ambos",     precio: 80000 }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-            ]
-        }
-    ]
+        opciones: [
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Solo Ember", value: "fuego", precio: 45000 },
+                    { nombre: "Solo Wade", value: "agua", precio: 45000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 80000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1270,7 +1540,32 @@ const productos = [
         alt: "WALL·E y EVE tejidos a crochet como un dúo de personajes robóticos.",
         historia: "Dos robots que cruzan un mundo vacío y terminan descubriendo algo mucho más grande que su misión. Una historia sobre compañía, esperanza y vínculos que pueden surgir en los lugares más inesperados.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
+        etiqueta: "Amigurumi · Parejas",
+        opciones: [
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Solo WallE", value: "hornet", precio: 50000 },
+                    { nombre: "Solo el Eve", value: "caballero", precio: 50000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 90000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            },
+            {
+                nombre: "Planta",
+                items: [
+                    { nombre: "Sin planta", value: "sin", multiplicador: 1.00, defecto: true },
+                    { nombre: "Con planta", value: "con", multiplicador: 1.50, }
+                ]
+            }
+        ]
     },
 
     {
@@ -1283,43 +1578,31 @@ const productos = [
         historia: "Representa esa guía que llegamos a necesitar cuando estamos perdidos, asustados y con ganas de rendirnos.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Dúo",
-    opciones: [
-        {
-            nombre: "Combinación",
-            items: [
-                { nombre: "Solo Wirt",         value: "wirt",  precio: 50000 },
-                { nombre: "Solo Howl",   value: "",     precio: 50000 },
-                { nombre: "Los dos juntos",        value: "ambos",     precio: 90000 }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-            ]
-        },
-        {
-            nombre: "Sapito",
-            items: [
-                { nombre: "Sin sapito", value: "sin",   multiplicador: 1.00 },
-                { nombre: "Con sapito", value: "con",   multiplicador: 1.30 }
-            ]
-        }
-    ]
-    },
-
-    {
-        id: "osos-escandalosos",
-        categoria: "personajes",
-        nombre: "Osos Escandalosos",
-        precio: 30000,
-        imagen: "assets/img/catálogo/osos-escandalosos.png",
-        alt: "Tres Osos Escandalosos tejidos a crochet, representados como tres osos independientes.",
-        historia: "Pardo, Panda y Polar nunca necesitan mucho para convertir un día normal en una aventura. Tres hermanos con personalidades diferentes que comparten una misma historia de familia y amistad.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes"
+        opciones: [
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Solo Wirt", value: "wirt", precio: 50000 },
+                    { nombre: "Solo Howl", value: "", precio: 50000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 90000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            },
+            {
+                nombre: "Sapito",
+                items: [
+                    { nombre: "Sin sapito", value: "sin", multiplicador: 1.00 },
+                    { nombre: "Con sapito", value: "con", multiplicador: 1.12, defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -1332,37 +1615,27 @@ const productos = [
         historia: "Dos personajes unidos por una historia donde la magia, el cambio y el cariño se entrelazan. Una pieza inspirada en la conexión entre Sophie y Howl y en los mundos extraordinarios que habitan.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Parejas",
-    opciones: [
-        {
-            nombre: "Combinación",
-            items: [
-                { nombre: "Solo Sophie",         value: "sophie",  precio: 50000 },
-                { nombre: "Solo Howl",   value: "howl",     precio: 50000 },
-                { nombre: "Los dos juntos",        value: "ambos",     precio: 90000 }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-            ]
-        }
-    ]
+        opciones: [
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Solo Sophie", value: "sophie", precio: 50000 },
+                    { nombre: "Solo Howl", value: "howl", precio: 50000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 90000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
-    {
-        id: "pareja-chicas",
-        categoria: "parejas",
-        nombre: "Dúo chicas",
-        precio: 85000,
-        imagen: "assets/img/catálogo/pareja-chica.png",
-        alt: "Dos personajes femeninos tejidos a crochet como una pareja.",
-        historia: "Dos personajes que comparten un momento juntas y representan la cercanía que puede crecer entre dos personas. Una pieza pensada para celebrar amistad, compañía y vínculos especiales.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
-    },
+    
 
     {
         id: "coraline-wybie",
@@ -1374,24 +1647,24 @@ const productos = [
         historia: "Una puerta hacia otro mundo, misterios por descubrir y dos jóvenes que terminan enfrentando lo desconocido. Una pieza inspirada en la aventura, la curiosidad y la amistad.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Parejas",
-    opciones: [
-        {
-            nombre: "Combinación",
-            items: [
-                { nombre: "Solo Coraline",         value: "coraline",  precio: 50000 },
-                { nombre: "Solo Wybie",   value: "wybie",     precio: 50000 },
-                { nombre: "Los dos juntos",        value: "ambos",     precio: 85000 }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-            ]
-        }
-    ]
+        opciones: [
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Solo Coraline", value: "coraline", precio: 50000 },
+                    { nombre: "Solo Wybie", value: "wybie", precio: 50000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 85000 }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1404,37 +1677,263 @@ const productos = [
         historia: "Una historia de amor diferente, marcada por la ternura, la incomprensión y un personaje que solo quería encontrar un lugar donde pertenecer. Una pieza con estética gótica y romántica.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Parejas",
+        opciones: [
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Solo Edward", value: "edawrd", precio: 50000 },
+                    { nombre: "Solo pareja", value: "pareja", precio: 50000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 90000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+
+    {
+    id: "pinguinos",
+    categoria: "parejas",
+    nombre: "Pingüinos",
+    precio: 70000,
+    imagen: "assets/img/catálogo/pinguinos.png",
+    alt: "Dos pingüinos tejidos a crochet, uno rosa y blanco y otro gris y blanco.",
+    historia: "Dos pingüinos que representan la compañía y el cariño. Un dúo tierno pensado para compartir, regalar y conservar como recuerdo de una historia especial. Un amor para toda la vida...",
+    materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+    etiqueta: "Amigurumi · Parejas",
     opciones: [
         {
             nombre: "Combinación",
             items: [
-                { nombre: "Solo Edward",         value: "edawrd",  precio: 50000 },
-                { nombre: "Solo pareja",   value: "pareja",     precio: 50000 },
-                { nombre: "Los dos juntos",        value: "ambos",     precio: 90000 }
+                { nombre: "Solo pingüino", value: "rosa", precio: 40000 },
+                { nombre: "Los dos juntos", value: "ambos", precio: 70000, defecto: true }
+            ]
+        },
+        {
+                nombre: "Color Pingüino #1",
+                items: [
+                    { nombre: "Negro", value: "negro", defecto: true },
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa",defecto: true  },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" }
+
+                ]
+            },
+            {
+                nombre: "Color Pingüino #2",
+                items: [
+                    { nombre: "Blanco", value: "blanco",defecto: true  },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Amarillo", value: "amarillo"},
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" }
+
+                ]
+            },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+            ]
+        }
+    ]
+},
+
+{
+    id: "pollitos",
+    categoria: "parejas",
+    nombre: "Pollitos Novios",
+    precio: 70000,
+    imagen: "assets/img/catálogo/pollitos.png",
+    alt: "Dos pollitos tejidos a crochet vestidos de novia y novio.",
+    historia: "Una pareja de pollitos preparada para celebrar una historia de amor. Ella lleva su vestido de novia y él su elegante traje, formando un pequeño recuerdo de un día especial.",
+    materiales: "Hilo Coral 100% acrílico, hilo de algodón y relleno siliconado.",
+    etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo novia", value: "novia", precio: 40000 },
+                { nombre: "Solo novio", value: "novio", precio: 40000 },
+                { nombre: "Los dos juntos", value: "ambos", precio: 70000, defecto: true }
             ]
         },
         {
             nombre: "Tamaño",
             items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+                { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
             ]
         }
     ]
-    },
+},
 
-    {
-        id: "pareja-moderna",
-        categoria: "parejas",
-        nombre: "Un momento juntas",
-        precio: 80000,
-        imagen: "assets/img/catálogo/pareja-moderna.png",
-        alt: "Dos personajes tejidos a crochet con vestimenta moderna, representados como pareja.",
-        historia: "Dos personas compartiendo un momento de una historia que todavía está escribiéndose. Una pieza que representa el amor cotidiano, la compañía y la construcción de recuerdos juntos.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas"
-    },
+{
+    id: "pucca-garu",
+    categoria: "parejas",
+    nombre: "Pucca + Garu",
+    precio: 40000,
+    imagen: "assets/img/catálogo/pucca-garu.png",
+    alt: "Pucca y Garu tejidos a crochet como una pareja de personajes.",
+    historia: "Una pareja marcada por las travesuras, el cariño y una persecución que parece no tener final. Pucca y Garu llevan su divertida historia a una versión tejida para conservarla.",
+    materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+    etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Pucca", value: "pucca", precio: 25000 },
+                { nombre: "Solo Garu", value: "garu", precio: 25000 },
+                { nombre: "Los dos juntos", value: "ambos", precio: 40000, defecto: true }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Llavero (8 cm)", value: "pequeno", multiplicador: 1.00, defecto: true },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 2.10 },
+                { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.40 }
+            ]
+        }
+    ]
+},
+
+{
+    id: "shrek-fiona",
+    categoria: "parejas",
+    nombre: "Shrek + Fiona",
+    precio: 40000,
+    imagen: "assets/img/catálogo/shrek-fiona.png",
+    alt: "Shrek y Fiona tejidos a crochet en su forma de ogros verdes.",
+    historia: "Una pareja que encontró el amor lejos de los cuentos tradicionales. Shrek y Fiona representan una historia donde ser diferente nunca fue un impedimento para encontrar a alguien con quien compartir el camino.",
+    materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+    etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Fiona", value: "fiona", precio: 25000 },
+                { nombre: "Solo Shrek", value: "shrek", precio: 25000 },
+                { nombre: "Los dos juntos", value: "ambos", precio: 40000, defecto: true }
+            ]
+        },
+        {
+             
+           nombre: "Tamaño",
+            items: [
+                { nombre: "Llavero (8 cm)", value: "pequeno", multiplicador: 1.00, defecto: true },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 2.10 },
+                { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.40 }
+            ]
+        
+        }
+    ]
+},
+
+{
+    id: "zootopia",
+    categoria: "parejas",
+    nombre: "Nick + Judy",
+    precio: 40000,
+    imagen: "assets/img/catálogo/zootopia.png",
+    alt: "Nick Wilde y Judy Hopps de Zootopia tejidos a crochet como un dúo.",
+    historia: "Dos personajes que demostraron que las diferencias no tienen por qué separar a quienes aprenden a confiar y trabajar juntos. Nick y Judy forman un dúo lleno de personalidad, aventura y compañerismo.",
+    materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+    etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Nick", value: "nick", precio: 25000 },
+                { nombre: "Solo Judy", value: "judy", precio: 25000 },
+                { nombre: "Los dos juntos", value: "ambos", precio: 40000, defecto: true }
+            ]
+        },
+        {
+           nombre: "Tamaño",
+            items: [
+                { nombre: "Llavero (8 cm)", value: "pequeno", multiplicador: 1.00, defecto: true },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 2.10 },
+                { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.40 }
+            ]
+        }
+    ]
+},
+
+{
+    id: "goku-milk",
+    categoria: "parejas",
+    nombre: "Goku + Milk",
+    precio: 40000,
+    imagen: "assets/img/catálogo/goku-milk.png",
+    alt: "Goku y Milk tejidos a crochet como pareja inspirada en Dragon Ball.",
+    historia: "Una pareja que combina aventura, carácter y una historia compartida. Goku y Milk llevan el universo de Dragon Ball a un pequeño dúo tejido para los fans de estos personajes.",
+    materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+    etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo Goku", value: "goku", precio: 25000 },
+                { nombre: "Solo Milk", value: "milk", precio: 25000 },
+                { nombre: "Los dos juntos", value: "ambos", precio: 40000, defecto: true }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Llavero (8 cm)", value: "pequeno", multiplicador: 1.00, defecto: true },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 2.10 },
+                { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.40 }
+            ]
+        }
+    ]
+},
+
+{
+    id: "nutrias",
+    categoria: "parejas",
+    nombre: "Nutrias",
+    precio: 70000,
+    imagen: "assets/img/catálogo/nutrias.png",
+    alt: "Dos nutrias tejidas a crochet con mejillas sonrojadas y un pequeño corazón.",
+    historia: "Dos pequeñas nutrias que representan el cariño en los detalles. Juntas forman un dúo tierno, acompañado por un pequeño corazón que convierte la pieza en un regalo especial.",
+    materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+    etiqueta: "Amigurumi · Parejas",
+    opciones: [
+        {
+            nombre: "Combinación",
+            items: [
+                { nombre: "Solo una nutria", value: "una", precio: 40000 },
+                { nombre: "Las dos juntas", value: "ambos", precio: 70000, defecto: true }
+            ]
+        },
+        {
+            nombre: "Tamaño",
+            items: [
+                { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+            ]
+        }
+    ]
+},
+    
 
     {
         id: "duo-patitos",
@@ -1446,23 +1945,60 @@ const productos = [
         historia: "Dos pequeños patitos que parecen destinados a ir juntos. Una pieza tierna inspirada en la amistad, la compañía y esos pequeños compañeros que alegran cualquier espacio.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Parejas",
-    opciones: [
-        {
-            nombre: "Combinación",
-            items: [
-                { nombre: "Solo  patito",         value: "pato",  precio: 30000 },
-                { nombre: "Los dos juntos",        value: "ambos",     precio: 60000 }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-            ]
-        }
-    ]
+        opciones: [
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Solo  patito", value: "pato", precio: 30000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 60000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Color Pato #1",
+                items: [
+                    { nombre: "Blanco", value: "blanco" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa",defecto: true  },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" }
+
+                ]
+            },
+            {
+                nombre: "Color Pato #2",
+                items: [
+                    { nombre: "Blanco", value: "blanco",defecto: true  },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Amarillo", value: "amarillo"},
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" }
+
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            },
+            {
+                nombre: "Accesorios",
+                items: [
+                    { nombre: "Impermeable de lluvia (1und)", value: "lluvia", multiplicador: 1.50 },
+                    { nombre: "Pañuelo (1und)", value: "panuelo", multiplicador: 1.20 },
+                    { nombre: "Sombrero (1und)", value: "sombrero", multiplicador: 1.20 }
+                ]
+            },
+            
+        ]
     },
 
     {
@@ -1475,201 +2011,26 @@ const productos = [
         historia: "Dos rivales que pueden pasar el día persiguiéndose, pero que nunca dejan de formar parte de la misma historia. Un dúo lleno de humor, travesuras y nostalgia.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Amigurumi · Parejas",
-    opciones: [
-        {
-            nombre: "Combinación",
-            items: [
-                { nombre: "Solo Tom",         value: "tom",  precio: 40000 },
-                { nombre: "Solo Jerry",   value: "jerry",     precio: 40000 },
-                { nombre: "Los dos juntos",        value: "ambos",     precio: 70000 }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-            ]
-        }
-    ]
-    },
-
-    {
-        id: "venom-spiderman",
-        categoria: "personajes",
-        nombre: "Spider-Man",
-        precio: 55000,
-        imagen: "assets/img/catálogo/venon-spiderman.png",
-        alt: "Venom y Spider-Man tejidos a crochet, uno negro y otro con traje rojo y azul.",
-        historia: "Dos figuras enfrentadas por una relación marcada por el conflicto y la dualidad. Una pieza que reúne dos fuerzas opuestas y convierte ese contraste en una historia visual.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Personajes",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Combinación",
+                items: [
+                    { nombre: "Solo Tom", value: "tom", precio: 40000 },
+                    { nombre: "Solo Jerry", value: "jerry", precio: 40000 },
+                    { nombre: "Los dos juntos", value: "ambos", precio: 70000, defecto: true }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
     },
 
-    {
-        id: "novio-pareja",
-        categoria: "parejas",
-        nombre: "Chico deportivo",
-        precio: 45000,
-        imagen: "assets/img/catálogo/novio-pareja.png",
-        alt: "Muñeco de un chico casual con una camisa de futbol.",
-        historia: "Cuando las pasiones se trasmiten, y lo apoyas en sus sueños.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas",
-        opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-                ]
-            }
-        ]
-    },
-
-    {
-        id: "novio-rosado",
-        categoria: "parejas",
-        nombre: "Chico casual",
-        precio: 48000,
-        imagen: "assets/img/catálogo/novio-rosa.png",
-        alt: "Muñeco de novio tejido a crochet con un traje deportivo o representativo del tenis.",
-        historia: "Cuando el deporte es su pasión, o simplemente es él.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Amigurumi · Parejas",
-        opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-                ]
-            }
-        ]
-    },
-
-        {
-        id: "chica-elegante",
-        categoria: "parejas",
-        nombre: "Chica elegante",
-        precio: 50000,
-        imagen: "assets/img/catálogo/novia-estilo.png",
-        alt: "Muñeca de chica tejida a crochet con estilo único.",
-        historia: "Representa la chispa única que hizo que te enamorarás perdidamente de ella.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos",
-        opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-                ]
-            }
-        ]
-    },
-
-    {
-        id: "novia-lisa",
-        categoria: "parejas",
-        nombre: "Chica casual",
-        precio: 45000,
-        imagen: "assets/img/catálogo/novia-liso.png",
-        alt: "Muñeca de novia tejida a crochet con un sueter y pantalon casual.",
-        historia: "El día a día donde crean su historia juntos.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos",
-        opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-                ]
-            }
-        ]
-    },
-
-    {
-        id: "novia-moderna",
-        categoria: "parejas",
-        nombre: "Chica Moderna",
-        precio: 50000,
-        imagen: "assets/img/catálogo/novia-moderna.png",
-        alt: "Muñeca de novia tejida a crochet con ropa moderna.",
-        historia: "Representa cada salida donde compartieron momentos únicos y mágicos juntos.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos",
-        opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-                ]
-            }
-        ]
-    },
-
-    {
-        id: "novia-muneca",
-        categoria: "parejas",
-        nombre: "Chica tierna",
-        precio: 45000,
-        imagen: "assets/img/catálogo/novia-muneca.png",
-        alt: "Muñeca de novia tejida a crochet con detalles de muñeca.",
-        historia: "Una pequeña chica hecha para conservar un recuerdo tierno.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos",
-        opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-                ]
-            }
-        ]
-    },
-
-    {
-        id: "novia-rizos",
-        categoria: "parejas",
-        nombre: "Muñeca",
-        precio: 50000,
-        imagen: "assets/img/catálogo/novia-risos.png",
-        alt: "Muñeca de chica tejida a crochet con un mono y cabello rizado.",
-        historia: "No importa que tan lejos este, siempre la llevarás en tu alma y corazón.",
-        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
-        etiqueta: "Regalo especial · Regalos",
-        opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
-                ]
-            }
-        ]
-    },
 
 
     // =====================================================
@@ -1706,36 +2067,104 @@ const productos = [
         id: "bolso-estrella",
         categoria: "regalo",
         nombre: "Bolso estrella",
-        precio: 70000,
+        precio: 150000,
         imagen: "assets/img/catálogo/bolso-estrella.png",
         alt: "Bolso tejido de color claro con una estrella decorativa en el centro y asas.",
         historia: "Estrellas que te acompañan a donde vayas. Un bolso que combina practicidad con algo que te representa.",
         materiales: "Lana acrílica de grosor medio y forro textil.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Negro + Blanco", value: "nebla", defecto: true},
+                    { nombre: "Rosa + Blanco", value: "robla"},
+                    { nombre: "Rojo + Negro", value: "rone"},
+                    { nombre: "Blanco + Morado", value: "nemo"},
+                    { nombre: "Azul + Blanco", value: "azbla"},
+                    { nombre: "Amarillo + Blanco", value: "ambla"}
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeña: 30cm x 33cm.", value: "pequeno", multiplicador: 0.80 },
+                    { nombre: "Mediana: 41cm x 36cm. ", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande: 46cm x 41cm.", value: "grande", multiplicador: 1.50 }
+                ]
+            }
+        ]
+
     },
 
     {
         id: "bolso-negro",
         categoria: "regalo",
         nombre: "Bolso negro",
-        precio: 55000,
+        precio: 120000,
         imagen: "assets/img/catálogo/bolso-negro.png",
         alt: "Bolso tejido de color negro con asas y detalles decorativos.",
         historia: "Sencillo, versátil y elegante, este bolso está hecho para acompañar diferentes estilos. Un básico tejido que demuestra que lo práctico también puede tener encanto.",
         materiales: "Lana acrílica de grosor medio y forro textil.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde", defecto: true },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" },
+                    { nombre: "Gris", value: "gris" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeña: 30cm x 33cm.", value: "pequeno", multiplicador: 0.80 },
+                    { nombre: "Mediana: 41cm x 36cm. ", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande: 46cm x 41cm.", value: "grande", multiplicador: 1.50 }
+                ]
+            }
+        ]
     },
 
     {
         id: "bolso-rosa",
         categoria: "regalo",
         nombre: "Bolso rosa",
-        precio: 60000,
+        precio: 200000,
         imagen: "assets/img/catálogo/bolso-rosa.png",
         alt: "Bolso tejido de color rosa claro con una moña decorativa en el frente y asas.",
         historia: "Un bolso pensado para quienes disfrutan de los detalles dulces. Su tono rosa y su pequeña moña convierten un accesorio cotidiano en algo especial.",
         materiales: "Lana acrílica de grosor medio y forro textil.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Color",
+                items: [
+                    
+                    { nombre: "Rosa + Blanco", value: "robla", defecto: true},
+                    { nombre: "Negro + Blanco", value: "nebla"},
+                    { nombre: "Rojo + Negro", value: "rone"},
+                    { nombre: "Blanco + Morado", value: "nemo"},
+                    { nombre: "Azul + Blanco", value: "azbla"},
+                    { nombre: "Amarillo + Blanco", value: "ambla"}
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeña: 30cm x 33cm.", value: "pequeno", multiplicador: 0.80 },
+                    { nombre: "Mediana: 41cm x 36cm. ", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande: 46cm x 41cm.", value: "grande", multiplicador: 1.50 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1749,12 +2178,12 @@ const productos = [
         materiales: "Hilo de algodón y base metálica para broche.",
         etiqueta: "Accesorio · Regalos",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (10 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (30 cm)",  value: "grande",  multiplicador: 1.50 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (10 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (30 cm)", value: "grande", multiplicador: 1.50 }
                 ]
             }
         ]
@@ -1771,12 +2200,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Decoración · Regalos",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1793,12 +2222,12 @@ const productos = [
         materiales: "Lana acrílica suave de grosor medio.",
         etiqueta: "Accesorio · Regalos",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1828,12 +2257,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Decoración · Regalos",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1850,12 +2279,12 @@ const productos = [
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Decoración · Regalos",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.60 },
-                { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (40 cm)",  value: "grande",  multiplicador: 2.10 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
         ]
@@ -1872,12 +2301,12 @@ const productos = [
         materiales: "Hilo de algodón y argolla metálica para llavero.",
         etiqueta: "Llavero · Regalos",
         opciones: [
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.80 },
-                { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (15 cm)",  value: "grande",  multiplicador: 1.25 }
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.80 },
+                    { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (15 cm)", value: "grande", multiplicador: 1.25 }
                 ]
             }
         ]
@@ -1893,25 +2322,25 @@ const productos = [
         historia: "Pequeños personajes nacidos de una historia llena de misterios, sustos y noches que parecen no terminar. Un conjunto para llevar un poco de ese universo contigo.",
         materiales: "Hilo de algodón y argollas metálicas para llavero.",
         etiqueta: "Llaveros · Regalos",
-    opciones: [
-        {
-            nombre: "Personaje",
-            items: [
-                { nombre: "Freddy",       value: "freddy" },
-                { nombre: "Bonnie",       value: "bonnie" },
-                { nombre: "Chica",        value: "chica" },
-                { nombre: "Foxy",  value: "foxy" }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.80 },
-                { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (15 cm)",  value: "grande",  multiplicador: 1.25 }
-            ]
-        }
-    ]
+        opciones: [
+            {
+                nombre: "Personaje",
+                items: [
+                    { nombre: "Freddy", value: "freddy", defecto: true },
+                    { nombre: "Bonnie", value: "bonnie" },
+                    { nombre: "Chica", value: "chica" },
+                    { nombre: "Foxy", value: "foxy" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.80 },
+                    { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (15 cm)", value: "grande", multiplicador: 1.25 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1924,25 +2353,25 @@ const productos = [
         historia: "Finn y sus amigos convierten cada día en una aventura diferente. Estos pequeños llaveros llevan consigo el espíritu de amistad, imaginación y diversión de ese mundo.",
         materiales: "Hilo de algodón y argollas metálicas para llavero.",
         etiqueta: "Llaveros · Regalos",
-    opciones: [
-        {
-            nombre: "Personaje",
-            items: [
-                { nombre: "Finn",       value: "finn" },
-                { nombre: "Jake",       value: "jake" },
-                { nombre: "Bmo",        value: "bmo" },
-                { nombre: "Trompi",  value: "trompi" }
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.80 },
-                { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (15 cm)",  value: "grande",  multiplicador: 1.25 }
-            ]
-        }
-    ]
+        opciones: [
+            {
+                nombre: "Personaje",
+                items: [
+                    { nombre: "Finn", value: "finn", defecto: true },
+                    { nombre: "Jake", value: "jake" },
+                    { nombre: "Bmo", value: "bmo" },
+                    { nombre: "Trompi", value: "trompi" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.80 },
+                    { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (15 cm)", value: "grande", multiplicador: 1.25 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1955,27 +2384,27 @@ const productos = [
         historia: "Pequeños personajes inspirados en mundos donde la naturaleza, la magia y las emociones se encuentran. Un detalle para llevar contigo un pedacito de esas historias.",
         materiales: "Hilo de algodón y argollas metálicas para llavero.",
         etiqueta: "Llaveros · Regalos",
-    opciones: [
-        {
-            nombre: "Personaje",
-            items: [
-                { nombre:"Sin cara",       value: "sin-cara" },
-                { nombre: "Totoro",       value: "totoro" },
-                { nombre: "Calcifer",        value: "calcifer" },
-                { nombre: "Jiji",  value: "jiji" },
-                { nombre: "Porco", value: "porco"},
-                { nombre: "Kodama", value: "kodama"}
-            ]
-        },
-        {
-            nombre: "Tamaño",
-            items: [
-                { nombre: "Pequeño (8 cm)",  value: "pequeno", multiplicador: 0.80 },
-                { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00 },
-                { nombre: "Grande (15 cm)",  value: "grande",  multiplicador: 1.25 }
-            ]
-        }
-    ]
+        opciones: [
+            {
+                nombre: "Personaje",
+                items: [
+                    { nombre: "Sin cara", value: "sin-cara" },
+                    { nombre: "Totoro", value: "totoro", defecto: true },
+                    { nombre: "Calcifer", value: "calcifer" },
+                    { nombre: "Jiji", value: "jiji" },
+                    { nombre: "Porco", value: "porco" },
+                    { nombre: "Kodama", value: "kodama" }
+                ]
+            },
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.80 },
+                    { nombre: "Mediano (12 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (15 cm)", value: "grande", multiplicador: 1.25 }
+                ]
+            }
+        ]
     },
 
     {
@@ -1989,21 +2418,21 @@ const productos = [
         materiales: "Lana acrílica suave de grosor medio.",
         etiqueta: "Accesorio · Regalos",
         opciones: [
-        {
-            nombre: "Color",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Marrón", value: "marron"},
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        }
-    ]
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo", defecto: true },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" }
+                ]
+            }
+        ]
     },
 
     {
@@ -2017,16 +2446,16 @@ const productos = [
         materiales: "Lana acrílica suave de grosor medio.",
         etiqueta: "Accesorio · Regalos",
         opciones: [
-        {
-            nombre: "Color",
-            items: [
-                { nombre: "Monocromático", value: "monocromatico" },
-                { nombre: "Tierra",     value: "tierra" },
-                { nombre: "azul, blanco, negro",     value: "formal" },
-                { nombre: "rojo, azul, blanco",     value: "casual" }
-            ]
-        }
-    ]
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Monocromático", value: "monocromatico", defecto: true },
+                    { nombre: "Tierra", value: "tierra" },
+                    { nombre: "azul, blanco, negro", value: "formal" },
+                    { nombre: "rojo, azul, blanco", value: "casual" }
+                ]
+            }
+        ]
     },
 
     {
@@ -2040,21 +2469,21 @@ const productos = [
         materiales: "Lana acrílica suave de grosor medio.",
         etiqueta: "Accesorio · Regalos",
         opciones: [
-        {
-            nombre: "Color",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Marrón", value: "marron"},
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        }
-    ]
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo", defecto: true },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" }
+                ]
+            }
+        ]
     },
 
 
@@ -2069,35 +2498,35 @@ const productos = [
         materiales: "Lana acrílica suave de grosor medio.",
         etiqueta: "Accesorio · Regalos",
         opciones: [
-        {
-            nombre: "Color de panñoleta",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Marrón", value: "marron"},
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        },
-        {
-            nombre: "Color de flores",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Marrón", value: "marron"},
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        }
-    ]
+            {
+                nombre: "Color de panñoleta",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco", defecto: true }
+                ]
+            },
+            {
+                nombre: "Color de flores",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa", defecto: true },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" }
+                ]
+            }
+        ]
     },
 
     {
@@ -2111,21 +2540,21 @@ const productos = [
         materiales: "Lana acrílica suave de grosor medio.",
         etiqueta: "Accesorio · Regalos",
         opciones: [
-        {
-            nombre: "Color",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Marrón", value: "marron"},
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        }
-    ]
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo", defecto: true },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" }
+                ]
+            }
+        ]
     },
 
     {
@@ -2139,21 +2568,21 @@ const productos = [
         materiales: "Hilo de algodón y detalles decorativos.",
         etiqueta: "Accesorio · Regalos",
         opciones: [
-        {
-            nombre: "Color de flores",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Marrón", value: "marron"},
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        }
-    ]
+            {
+                nombre: "Color de flores",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa", defecto: true },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" }
+                ]
+            }
+        ]
     },
 
     {
@@ -2167,116 +2596,161 @@ const productos = [
         materiales: "Hilo de algodón y detalles decorativos.",
         etiqueta: "Accesorio · Regalos",
         opciones: [
-        {
-            nombre: "Color de flores",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Marrón", value: "marron"},
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        }
-    ]
+            {
+                nombre: "Color de flores",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo", defecto: true },
+                    { nombre: "Rosa", value: "rosa" },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" }
+                ]
+            }
+        ]
     },
 
     {
         id: "ramo-tulipanes",
         categoria: "regalo",
         nombre: "Ramo de tulipanes",
-        precio: 45000,
+        precio: 65000,
         imagen: "assets/img/catálogo/ramo-5-tulipanes.png",
         alt: "Ramo tejido a crochet compuesto por varios tulipanes.",
         historia: "Un ramo que conserva la belleza de los tulipanes sin marchitarse. Una pieza pensada para regalar un recuerdo que pueda permanecer mucho más tiempo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Decoración · Regalos",
         opciones: [
-        {
-            nombre: "Color de flores",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Marrón", value: "marron"},
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        },
-    ]
+            {
+                nombre: "Color de flores",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa", defecto: true },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" }
+                ]
+            },
+            {
+                nombre: "Cantidad de flores",
+                items: [
+                    { nombre: "Flor", value: "uno", multiplicador: 0.20},
+                    { nombre: "5 flores", value: "cinco", multiplicador: 1.00, defecto: true},
+                    { nombre: "6 flores", value: "seis", multiplicador: 1.20 },
+                    { nombre: "7 flores", value: "siete", multiplicador: 1.40 }
+                ]
+            },
+        ]
     },
 
     {
         id: "ramo-amarillo",
         categoria: "regalo",
         nombre: "Ramo amarillo",
-        precio: 45000,
+        precio: 65000,
         imagen: "assets/img/catálogo/ramo-amarrillo.png",
         alt: "Ramo tejido a crochet compuesto por varias flores amarillas.",
         historia: "Un ramo lleno de color para celebrar alegría, cariño y buenos momentos. Flores tejidas que pueden convertirse en un regalo duradero para alguien especial.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Decoración · Regalos",
         opciones: [
-        {
-            nombre: "Color de flores",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        },
-    ]
+            {
+                nombre: "Color de flores",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa", defecto: true },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" }
+                ]
+            },
+            {
+                nombre: "Cantidad de flores",
+                items: [
+                    { nombre: "Flor", value: "uno", multiplicador: 0.20},
+                    { nombre: "5 flores", value: "cinco", multiplicador: 1.00, defecto: true},
+                    { nombre: "6 flores", value: "seis", multiplicador: 1.20 },
+                    { nombre: "7 flores", value: "siete", multiplicador: 1.40 }
+                ]
+            },
+        ]
     },
 
     {
         id: "ramo-rosas",
         categoria: "regalo",
         nombre: "Ramo de rosas",
-        precio: 50000,
+        precio: 70000,
         imagen: "assets/img/catálogo/rosas.png",
         alt: "Ramo tejido a crochet compuesto por varias rosas rojas.",
         historia: "Las rosas rojas han acompañado durante siglos las historias de amor y pasión. Este ramo convierte ese símbolo clásico en un regalo tejido que puede conservarse como recuerdo.",
         materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
         etiqueta: "Decoración · Regalos",
         opciones: [
-        {
-            nombre: "Color de flores",
-            items: [
-                { nombre: "Amarillo", value: "amarillo" },
-                { nombre: "Rojo",     value: "rojo" },
-                { nombre: "Rosa",     value: "rosa" },
-                { nombre: "Morado",   value: "morado" },
-                { nombre: "Azul",     value: "azul" },
-                { nombre: "Verde",    value: "verde" },
-                { nombre: "Marrón", value: "marron"},
-                { nombre: "Negro", value: "negro"},
-                { nombre: "Blanco", value: "blanco"}
-            ]
-        },
-    ]
+            {
+                nombre: "Color de flores",
+                items: [
+                    { nombre: "Amarillo", value: "amarillo" },
+                    { nombre: "Rojo", value: "rojo" },
+                    { nombre: "Rosa", value: "rosa", defecto: true },
+                    { nombre: "Morado", value: "morado" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Verde", value: "verde" },
+                    { nombre: "Marrón", value: "marron" },
+                    { nombre: "Negro", value: "negro" },
+                    { nombre: "Blanco", value: "blanco" }
+                ]
+            },
+            {
+                nombre: "Cantidad de flores",
+                items: [
+                    { nombre: "Flor", value: "uno", multiplicador: 0.20},
+                    { nombre: "5 flores", value: "cinco", multiplicador: 1.00, defecto: true},
+                    { nombre: "6 flores", value: "seis", multiplicador: 1.20 },
+                    { nombre: "7 flores", value: "siete", multiplicador: 1.40 }
+                ]
+            },
+        ]
     },
 
     {
         id: "sombrero-animales",
         categoria: "regalo",
         nombre: "Sombrero de animales",
-        precio: 40000,
+        precio: 45000,
         imagen: "assets/img/catálogo/sombrero-animales.png",
         alt: "Sombrero tejido a crochet con diseño de animales y detalles decorativos.",
         historia: "Orejas, formas y detalles divertidos convierten este sombrero en algo más que un accesorio. Una pieza pensada para añadir un toque juguetón y tierno a cualquier estilo.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Tipo de Sombrero",
+                items: [
+                    { nombre: "Sapo", value: "sapo", defecto: true },
+                    { nombre: "Vaca", value: "vaca" },
+                    { nombre: "Gato", value: "gato" },
+                    { nombre: "Oso", value: "oso" }
+                ]
+            },
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2288,7 +2762,23 @@ const productos = [
         alt: "Sombrero tejido a crochet con diseño tierno y detalles decorativos.",
         historia: "Un accesorio lleno de pequeños detalles adorables para quienes disfrutan de los estilos tiernos. Una pieza que convierte cualquier conjunto en algo más personal.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Tipo de Sombrero",
+                items: [
+                    { nombre: "Fresa", value: "fresa", defecto: true },
+                    { nombre: "Sapito", value: "sapito" },
+                    { nombre: "Pollito", value: "pollito" }
+                ]
+            },
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2300,7 +2790,15 @@ const productos = [
         alt: "Sombrero tejido a crochet inspirado en el personaje de Duolingo.",
         historia: "Aprender idiomas también puede tener su lado divertido. Este sombrero lleva el característico espíritu de Duolingo a un accesorio tejido pensado para destacar.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2312,7 +2810,15 @@ const productos = [
         alt: "Sombrero tejido a crochet con diseño de fresa, color rojo y detalles de semillas.",
         historia: "Rojo, dulce y lleno de pequeños detalles que recuerdan a una fresa. Un accesorio inspirado en la naturaleza y en esa estética divertida que nunca pasa desapercibida.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2324,7 +2830,26 @@ const productos = [
         alt: "Sombrero tejido a crochet con diseño de gato, orejas puntiagudas y detalles faciales.",
         historia: "Unas pequeñas orejas pueden cambiar por completo un look. Este sombrero combina la comodidad de un accesorio tejido con la ternura de los gatos.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Color",
+                items: [
+                    { nombre: "Negro + Blanco", value: "nebla", defecto: true},
+                    { nombre: "Rosa + Blanco", value: "robla"},
+                    { nombre: "Rojo + Negro", value: "rone"},
+                    { nombre: "Blanco + Morado", value: "nemo"},
+                    { nombre: "Azul + Blanco", value: "azbla"},
+                    { nombre: "Amarillo + Blanco", value: "ambla"}
+                ]
+            },
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2336,7 +2861,23 @@ const productos = [
         alt: "Sombrero tejido a crochet inspirado en un Minion, de color amarillo y con detalle de ojo.",
         historia: "Amarillo, divertido y difícil de ignorar, este sombrero lleva el espíritu de los Minions a un accesorio. Una pieza para quienes prefieren vestir con humor y personalidad.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Tipo de Sombrero",
+                items: [
+                    { nombre: "Cerdo", value: "cerdo", defecto: true },
+                    { nombre: "Creeper", value: "creeper" },
+                    { nombre: "Enderman", value: "enderman" }
+                ]
+            },
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2348,7 +2889,15 @@ const productos = [
         alt: "Sombrero tejido a crochet inspirado en Snoopy, con detalles de su rostro.",
         historia: "El estilo tranquilo de Snoopy convertido en un accesorio para llevar contigo. Una pieza inspirada en la amistad, la nostalgia y el encanto del personaje.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2360,7 +2909,24 @@ const productos = [
         alt: "Sombrero tejido a crochet inspirado en un personaje de South Park.",
         historia: "Un accesorio inspirado en el humor irreverente y el estilo característico de South Park. Una pieza para quienes disfrutan de llevar sus gustos de una manera diferente.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Tipo de Sombrero",
+                items: [
+                    { nombre: "Eric", value: "eric", defecto: true },
+                    { nombre: "Kenny", value: "kenny" },
+                    { nombre: "Kyle", value: "kyle" },
+                    { nombre: "Stan", value: "stan" }
+                ]
+            },
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2372,7 +2938,23 @@ const productos = [
         alt: "Sombrero tejido a crochet inspirado en Spider-Man, con colores rojo y azul y detalles de máscara.",
         historia: "Los colores y detalles del héroe arácnido convertidos en un accesorio tejido. Una pieza inspirada en aventura, responsabilidad y ese pequeño deseo de sentirse héroe por un día.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Tipo de Sombrero",
+                items: [
+                    { nombre: "Rojo", value: "rojo", defecto: true },
+                    { nombre: "Blanco", value: "blanco" },
+                    { nombre: "Negro", value: "negro" }
+                ]
+            },
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2384,7 +2966,24 @@ const productos = [
         alt: "Sombrero tejido a crochet con diseño de tortuga ninja, color verde y detalles de caparazón.",
         historia: "Misterioso, divertido y con detalles inspirados en una tortuga ninja. Un accesorio que recuerda que no siempre hay que ir rápido para disfrutar el camino.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+            {
+                nombre: "Tipo de Sombrero",
+                items: [
+                    { nombre: "Rojo", value: "rojo", defecto: true },
+                    { nombre: "Marino", value: "marino" },
+                    { nombre: "Azul", value: "azul" },
+                    { nombre: "Naranja", value: "naranje" }
+                ]
+            },
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
     {
@@ -2396,7 +2995,16 @@ const productos = [
         alt: "Sombrero tejido a crochet inspirado en Totoro, de color gris y con orejas.",
         historia: "Un pequeño pedazo del mundo de Totoro convertido en un accesorio. Inspirado en la naturaleza, la imaginación y la magia que puede esconderse en los lugares cotidianos.",
         materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos"
+        etiqueta: "Accesorio · Regalos",
+        opciones: [
+
+            {
+                nombre: "Talla",
+                items: [
+                    { nombre: "talla única", value: "unico", defecto: true }
+                ]
+            }
+        ]
     },
 
 

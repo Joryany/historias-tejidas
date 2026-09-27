@@ -262,6 +262,26 @@ nav a #carrito:hover {
     transform: translateY(-3px);
 }
 
+#nav__a--carrito {
+    position: relative;
+}
+
+#carrito-contador {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--frambuesa);
+    color: var(--rosa-crema);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
 #nav__a--activo {
     background-color: var(--frambuesa);
     color: var(--blanco);
@@ -1214,6 +1234,10 @@ nav #nav__a--activo-:hover {
 
 
 .modal-overlay {
+
+     padding: var(--espacio-md);
+
+    display: flex;
     position: fixed;
     inset: 0;
     background-color: rgba(74, 20, 28, 0.6);                               
@@ -1231,16 +1255,20 @@ nav #nav__a--activo-:hover {
     visibility: visible;                            
 }
 
-
 .modal-cerrar {
-    position: absolute;
-    top: var(--espacio-sm);
-    right: var(--espacio-sm);
-    background: transparent;
+    position: sticky;
+    top: 0;
+    float: right;
+    margin-left: auto;
+    margin-bottom: var(--espacio-sm);
+    background: var(--rosa-crema);
     border: none;
     font-size: 1.5rem;
     color: var(--rosa-principal);
     cursor: pointer;
+    z-index: 10;
+    padding: var(--espacio-xs);
+    border-radius: 50%;
 }
 
 #personalizar {
@@ -1248,20 +1276,49 @@ nav #nav__a--activo-:hover {
 }
 
 .modal-cuadro {
-    transform: scale(0.9);    
-    transition: transform 0.3s ease;
     position: relative;
     background-color: var(--rosa-crema);
     border-radius: var(--radio);
     padding: var(--espacio-xl);
     max-width: 500px;
     width: 90%;
+    max-height: calc(100vh - 2 * var(--espacio-md));   
+    overflow-y: auto;                                    
     box-shadow: var(--sombra-grande);
+    padding-right: calc(var(--espacio-xl) - 8px);
+    scrollbar-width: thin;                         
+    scrollbar-color: var(--rosa-suave) transparent; 
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
 }
 
 .modal-overlay.activo .modal-cuadro {
     transform: scale(1);         
 }
+
+/* ====== BARRA DE SCROLL DEL MODAL ====== */
+
+.modal-cuadro::-webkit-scrollbar {
+    width: 6px;
+
+}
+
+.modal-cuadro::-webkit-scrollbar-track {
+    background: transparent;
+    margin: var(--espacio-sm) 0;
+    
+}
+
+.modal-cuadro::-webkit-scrollbar-thumb {
+    background: var(--rosa-suave);
+    border-radius: var(--radio-pill);
+   
+}
+
+.modal-cuadro::-webkit-scrollbar-thumb:hover {
+    background: var(--rosa-principal);
+}
+
 
 /* ====== TAMAÑOS EN EL MODAL ====== */
 
@@ -1506,4 +1563,68 @@ nav #nav__a--activo-:hover {
 
 }
 
+/* ====== GRUPOS DE OPCIONES EN EL MODAL ====== */
 
+.grupo-modal {
+    margin: var(--espacio-md) 0;
+}
+
+.grupo-modal h3 {
+    text-align: left;
+    margin-bottom: var(--espacio-xs);
+    color: var(--rosa-principal);
+}
+
+.opcion-modal {
+    display: block;
+    padding: var(--espacio-sm);
+    margin: var(--espacio-xs) 0;
+    background-color: var(--rosa-fondo);
+    border-radius: var(--radio);
+    cursor: pointer;
+    transition: background-color var(--transicion);
+}
+
+#opciones-modal {
+    color: var(--rosa-fuerte);
+    padding: var(--padding-tarjeta);
+    text-shadow: var(--sombra-pequeña);
+}
+
+
+.opcion-modal:hover {
+    background-color: var(--rosa-palido);
+}
+
+.modal-botones {
+    display: flex;
+    gap: var(--espacio-sm);
+    justify-content: flex-end;
+    margin-top: var(--espacio-md);
+    flex-wrap: wrap;
+}
+
+.button-primario {
+    background: var(--rosa-principal);
+    color: var(--rosa-crema);
+    border-color: var(--rosa-principal);
+}
+
+.button-primario:hover {
+    background: var(--frambuesa);
+    border-color: var(--frambuesa);
+}
+
+.relacionados {
+    padding: var(--padding-seccion);
+    background-color: var(--rosa-crema);
+    border-radius: var(--radio);
+    margin: var(--espacio-lg) auto;
+}
+
+.relacionados-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--espacio-md);
+    padding: var(--espacio-md);
+}

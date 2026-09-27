@@ -64,17 +64,22 @@ function mostrarProductos(lista) {
     let html = "";
     lista.forEach(function(producto) {
         html += `
-            <article class="tarjeta">
-                <img src="${producto.imagen}" alt="${producto.alt}">
-                <div class="producto-info">
-                    <h3>${producto.nombre}</h3>
-                    <p class="precio">$${producto.precio.toLocaleString("es-CO")} COP</p>
-                    <a class="button" href="producto.html?id=${producto.id}">
-                        Ver producto ->
-                    </a>
-                </div>
-            </article>
-        `;
+    <article class="tarjeta">
+        <img src="${producto.imagen}" alt="${producto.alt}">
+        <div class="producto-info">
+            <h3>${producto.nombre}</h3>
+            <p class="precio">$${producto.precio.toLocaleString("es-CO")} COP</p>
+            <div class="tarjeta-botones">
+                <a class="button" href="producto.html?id=${producto.id}">
+                    Ver producto
+                </a>
+                <button class="button button-primario boton-agregar" data-id="${producto.id}">
+                    🛒 Agregar
+                </button>
+            </div>
+        </div>
+    </article>
+`;
     });
     contenedor.innerHTML = html;
 }
@@ -118,3 +123,32 @@ botonesCategoria.forEach(function(boton) {
 
 // ========== ARRANQUE ==========
 renderizar();
+
+
+// ========== CARRITO (provisional) ==========
+let carrito = [];
+
+function agregarAlCarrito(idProducto) {
+    const producto = productos.find(function(p) { return p.id === idProducto; });
+    if (!producto) return;
+
+    carrito.push({ id: producto.id, nombre: producto.nombre, precio: producto.precio });
+    actualizarContadorCarrito();
+    console.log("Producto agregado al carrito:", producto.nombre);
+    console.log("Carrito actual:", carrito);
+}
+
+function actualizarContadorCarrito() {
+    const contador = document.querySelector("#carrito-contador");
+    if (contador) {
+        contador.textContent = carrito.length;
+    }
+}
+
+// Delegación de eventos: escuchar clics en botones "Agregar"
+contenedor.addEventListener("click", function(evento) {
+    if (evento.target.classList.contains("boton-agregar")) {
+        const id = evento.target.dataset.id;
+        agregarAlCarrito(id);
+    }
+});
