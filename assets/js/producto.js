@@ -1,6 +1,9 @@
     const parametros = new URLSearchParams(window.location.search);
     const idProducto = parametros.get("id");
     console.log("Id del Producto seleccionado:", idProducto);
+    const modal = document.querySelector("#modal");
+    const botonCerrar = document.querySelector("#cerrar-modal");
+    const botonCerrar2 = document.querySelector("#cerrar-modal-2");
 
 
     function buscarId(id) {
@@ -46,9 +49,7 @@
         const etiqueta = document.querySelector("#etiqueta");
         etiqueta.textContent = productoEncontrado.etiqueta;
 
-         const modal = document.querySelector("#modal");
-const botonCerrar = document.querySelector("#cerrar-modal");
-const botonCerrar2 = document.querySelector("#cerrar-modal-2");
+         
 
 
 // Preparar el modal
@@ -126,6 +127,7 @@ function construirModal(producto) {
     return true;
 }
 
+
 // 2. Lee las opciones que el usuario eligió
 function leerSelecciones(producto) {
     const selecciones = [];
@@ -191,6 +193,11 @@ function prepararModalPersonalizacion(producto, boton) {
     // Producto con opciones → comportamiento normal del modal
     boton.textContent = "Personalizar";
     construirModal(producto);
+
+        boton.addEventListener("click", function() {
+        modal.classList.add("activo");
+        actualizarPrecioModal(producto);
+    });
 
     const contenedorOpciones = document.querySelector("#opciones-modal");
     contenedorOpciones.addEventListener("change", function() {
