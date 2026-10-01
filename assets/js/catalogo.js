@@ -167,3 +167,5 @@ contenedor.addEventListener("click", function(evento) {
         agregarAlCarrito(id);
     }
 });
+
+cargarProductos();
