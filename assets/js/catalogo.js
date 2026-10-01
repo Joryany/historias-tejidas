@@ -5,6 +5,9 @@ const ordenador = document.querySelector("#ordenador");
 const paginacion = document.querySelector("#paginacion");
 const botonesCategoria = document.querySelectorAll(".boton-categoria");
 
+const API_URL = "https://historias-tejidas-backend.onrender.com/";
+let productos = [];
+
 // ========== ESTADO ==========
 let estado = {
     busqueda: "",
@@ -122,7 +125,17 @@ botonesCategoria.forEach(function(boton) {
 });
 
 // ========== ARRANQUE ==========
-renderizar();
+async function cargarProductos() {
+    try {
+        const respuesta = await fetch(API_URL + "/productos");
+        productos = await respuesta.json();
+        renderizar();
+    } catch (error) {
+        console.error("Error cargando productos:", error);
+    }
+}
+
+cargarProductos();
 
 
 // ========== CARRITO (provisional) ==========
