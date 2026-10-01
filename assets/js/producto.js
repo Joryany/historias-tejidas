@@ -3,7 +3,7 @@ const idProducto = parametros.get("id");
 const modal = document.querySelector("#modal");
 const botonCerrar = document.querySelector("#cerrar-modal");
 const botonCerrar2 = document.querySelector("#cerrar-modal-2");
-const API_URL = "https://historias-tejidas-backend.onrender.com/";
+const API_URL = "https://historias-tejidas-backend.onrender.com/api";
 
 async function cargarProducto() {
     try {

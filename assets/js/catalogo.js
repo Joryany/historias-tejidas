@@ -5,7 +5,7 @@ const ordenador = document.querySelector("#ordenador");
 const paginacion = document.querySelector("#paginacion");
 const botonesCategoria = document.querySelectorAll(".boton-categoria");
 
-const API_URL = "https://historias-tejidas-backend.onrender.com/";
+const API_URL = "https://historias-tejidas-backend.onrender.com/api";
 let productos = [];
 
 // ========== ESTADO ==========
