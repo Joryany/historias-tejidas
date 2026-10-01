@@ -18,9 +18,7 @@ let estado = {
 
 const POR_PAGINA = 9;
 
-const productosBarajados = [...productos].sort(function() {
-    return Math.random() - 0.5;
-});
+let productosBarajados = [];
 
 // ========== FUNCIÓN PRINCIPAL DE RENDER ==========
 function renderizar() {
@@ -129,13 +127,17 @@ async function cargarProductos() {
     try {
         const respuesta = await fetch(API_URL + "/productos");
         productos = await respuesta.json();
+
+        // Barajar AQUÍ, una vez que ya llegaron los datos
+        productosBarajados = [...productos].sort(function() {
+            return Math.random() - 0.5;
+        });
+
         renderizar();
     } catch (error) {
         console.error("Error cargando productos:", error);
     }
-}
-
-cargarProductos();
+};
 
 
 // ========== CARRITO (provisional) ==========
