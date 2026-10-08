@@ -139,33 +139,3 @@ async function cargarProductos() {
     }
 };
 
-
-// ========== CARRITO (provisional) ==========
-let carrito = [];
-
-function agregarAlCarrito(idProducto) {
-    const producto = productos.find(function(p) { return p.id === idProducto; });
-    if (!producto) return;
-
-    carrito.push({ id: producto.id, nombre: producto.nombre, precio: producto.precio });
-    actualizarContadorCarrito();
-    console.log("Producto agregado al carrito:", producto.nombre);
-    console.log("Carrito actual:", carrito);
-}
-
-function actualizarContadorCarrito() {
-    const contador = document.querySelector("#carrito-contador");
-    if (contador) {
-        contador.textContent = carrito.length;
-    }
-}
-
-// Delegación de eventos: escuchar clics en botones "Agregar"
-contenedor.addEventListener("click", function(evento) {
-    if (evento.target.classList.contains("boton-agregar")) {
-        const id = evento.target.dataset.id;
-        agregarAlCarrito(id);
-    }
-});
-
-cargarProductos();

@@ -16,16 +16,6 @@ async function cargarProducto() {
 
         const productoEncontrado = await respuesta.json();
 
-        function buscarId(id) {
-
-            for (let i = 0; i < productos.length; i++) {
-                if (productos[i].id === id) {
-                    return productos[i];
-                }
-            }
-            return null;
-        }
-
         console.log("Producto encontrado:", productoEncontrado);
 
         // Imagen
@@ -183,9 +173,8 @@ async function cargarProducto() {
         }
 
         // 5. Prepara el modal completo para un producto
-        function prepararModalPersonalizacion(producto, boton) {
+         function prepararModalPersonalizacion(producto, boton) {
             if (producto.opciones.length === 0) {
-                // Producto sin opciones → el botón agrega directo al carrito
                 boton.textContent = "Agregar al carrito";
                 boton.addEventListener("click", function () {
                     agregarAlCarrito(producto);
@@ -193,7 +182,6 @@ async function cargarProducto() {
                 return;
             }
 
-            // Producto con opciones → comportamiento normal del modal
             boton.textContent = "Personalizar";
             construirModal(producto);
 
@@ -203,91 +191,15 @@ async function cargarProducto() {
             });
 
             const contenedorOpciones = document.querySelector("#opciones-modal");
+
             contenedorOpciones.addEventListener("change", function () {
                 actualizarPrecioModal(producto);
             });
-
-
         }
-
-
-
-
-        // ========== PRODUCTOS RELACIONADOS ==========
-        function mostrarRelacionados(productoActual) {
-            const contenedorRel = document.querySelector("#relacionados");
-            if (!contenedorRel) return;
-
-            // Elegir productos de la misma categoría (sin el actual)
-            const relacionados = productos
-                .filter(function (p) {
-                    return p.categoria === productoActual.categoria && p.id !== productoActual.id;
-                })
-                .slice(0, 4);
-
-            let html = "";
-            relacionados.forEach(function (p) {
-                html += `
-            <article class="tarjeta">
-                <img src="${p.imagen}" alt="${p.alt}">
-                <div class="producto-info">
-                    <h3>${p.nombre}</h3>
-                    <p class="precio">$${p.precio.toLocaleString("es-CO")} COP</p>
-                    <a class="button" href="producto.html?id=${p.id}">Ver producto</a>
-                </div>
-            </article>
-        `;
-            });
-
-            contenedorRel.innerHTML = html;
-        }
-
-        // Llamar cuando se encuentra el producto
-        if (productoEncontrado !== null) {
-            mostrarRelacionados(productoEncontrado);
-        }
-
-
-        // ========== CARRITO PROVISIONAL ==========
-
-        function obtenerCarrito() {
-            const texto = localStorage.getItem("carritoHT");
-            return texto ? JSON.parse(texto) : [];
-        }
-
-        function guardarCarrito(carrito) {
-            localStorage.setItem("carritoHT", JSON.stringify(carrito));
-        }
-
-        function agregarAlCarrito(producto, selecciones) {
-            const carrito = obtenerCarrito();
-            carrito.push({
-                id: producto.id,
-                nombre: producto.nombre,
-                precio: producto.precio,
-                selecciones: selecciones || []
-            });
-            guardarCarrito(carrito);
-            actualizarContadorCarrito();
-            console.log("Producto agregado al carrito:", producto.nombre);
-            console.log("Carrito actual:", carrito);
-        }
-
-        function actualizarContadorCarrito() {
-            const contador = document.querySelector("#carrito-contador");
-            if (contador) {
-                contador.textContent = obtenerCarrito().length;
-            }
-        }
-
-        // Actualizar el contador al cargar la página
-        actualizarContadorCarrito();
-
 
     } catch (error) {
-        console.error("Error:", error);
+        console.error("Error al cargar el producto:", error);
     }
 }
 
 cargarProducto();
-
